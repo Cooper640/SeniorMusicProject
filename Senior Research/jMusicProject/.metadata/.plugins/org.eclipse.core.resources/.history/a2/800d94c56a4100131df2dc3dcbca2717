@@ -340,7 +340,7 @@ public class Reader implements JMC {
 		        	}
 		        	else{
 		        		Scanner lineScanner = new Scanner(input);
-		        		float key = Float.parseFloat(lineScanner.next());
+		        		int key = Integer.parseInt(lineScanner.next());
 		        		int value = Integer.parseInt(lineScanner.next());
 		        		if(rhythm){
 		        			weightedWriter.write(key+" "+(key*value));

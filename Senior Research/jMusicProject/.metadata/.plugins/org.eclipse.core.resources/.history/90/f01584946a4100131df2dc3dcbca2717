@@ -33,7 +33,6 @@ public class UI {
 	        for (int i = 0; i < bfiles.length && i < cfiles.length; i++){
 	            if (bfiles[i].isFile()&&cfiles[i].isFile()){
 	                Reader.buildLibrary(bfiles[i].getPath(),cfiles[i].getPath());
-	                Reader.weightRhythms("trees.txt");
 	            }
 	        }
 	    }

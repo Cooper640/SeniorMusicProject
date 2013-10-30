@@ -43,25 +43,25 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/SinglePhraseSelector.java"/>
 <editorState selectionHPixel="0" selectionLength="47" selectionOffset="1879"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Reader.java" partName="Reader.java" path="C:/Users/Tyler/Desktop/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/Reader.java" title="Reader.java" tooltip="Unigram Analysis/src/jmusicpackage/Reader.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Reader.java" partName="Reader.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/Reader.java" title="Reader.java" tooltip="Unigram Analysis/src/jmusicpackage/Reader.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/Reader.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="150"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="13199"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Analizer.java" partName="Analizer.java" path="C:/Users/Tyler/Desktop/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/Analizer.java" title="Analizer.java" tooltip="Unigram Analysis/src/jmusicpackage/Analizer.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Analizer.java" partName="Analizer.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/Analizer.java" title="Analizer.java" tooltip="Unigram Analysis/src/jmusicpackage/Analizer.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/Analizer.java"/>
-<editorState selectionHPixel="19" selectionLength="0" selectionOffset="6329"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="7413"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MusicGeneration.java" partName="MusicGeneration.java" path="C:/Users/Tyler/Desktop/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/MusicGeneration.java" title="MusicGeneration.java" tooltip="Unigram Analysis/src/jmusicpackage/MusicGeneration.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/MusicGeneration.java"/>
 <editorState selectionHPixel="0" selectionLength="6" selectionOffset="673"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UI.java" partName="UI.java" path="C:/Users/Tyler/Desktop/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/UI.java" title="UI.java" tooltip="Unigram Analysis/src/jmusicpackage/UI.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UI.java" partName="UI.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/UI.java" title="UI.java" tooltip="Unigram Analysis/src/jmusicpackage/UI.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/UI.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1272"/>
+<editorState selectionHPixel="0" selectionLength="51" selectionOffset="1024"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WholeSongAnalysis.java" partName="WholeSongAnalysis.java" path="C:/Users/Tyler/Desktop/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java" title="WholeSongAnalysis.java" tooltip="Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WholeSongAnalysis.java" partName="WholeSongAnalysis.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java" title="WholeSongAnalysis.java" tooltip="Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java"/>
-<editorState selectionHPixel="0" selectionLength="66" selectionOffset="714"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="714"/>
 </editor>
 </editors>
 <views>
@@ -388,64 +388,48 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
-<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7496706" ratioLeft="569" ratioRight="190" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7496706" ratioLeft="569" ratioRight="190" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
-<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44991213" ratioLeft="256" ratioRight="313" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.DisassemblyView" label="LabelNotFound"/>
 <page content="org.eclipse.ve.internal.java.codegen.editorpart.BeansList" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
-<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="716" ratioRight="716" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="716" ratioRight="716" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.ModulesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
-<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -461,128 +445,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/UI.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/Analizer.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/UI.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/Reader.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java"/>
 </editors>
-<item historyLabel="SinglePhraseSelector.java" index="0">
-<position info="not_deleted" x="562" y="0"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1698" y="0"/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="Analizer.java" index="3">
-<position info="not_deleted" x="5787" y="0"/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1436" y="0"/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="SinglePhraseSelector.java" index="0">
-<position info="not_deleted" x="562" y="0"/>
-</item>
-<item historyLabel="Reader.java" index="4">
-<position info="not_deleted" x="436" y="0"/>
-</item>
-<item historyLabel="Reader.java" index="4">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="Analizer.java" index="3">
-<position info="not_deleted" x="5787" y="0"/>
-</item>
-<item historyLabel="Reader.java" index="4">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="Analizer.java" index="3">
-<position info="not_deleted" x="372" y="0"/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1436" y="0"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1658" y="0"/>
-</item>
-<item historyLabel="Analizer.java" index="3">
-<position info="not_deleted" x="372" y="0"/>
-</item>
-<item historyLabel="Reader.java" index="4">
-<position info="not_deleted" x="150" y="0"/>
-</item>
-<item historyLabel="Analizer.java" index="3">
-<position info="not_deleted" x="372" y="0"/>
-</item>
-<item historyLabel="Reader.java" index="4">
-<position info="not_deleted" x="150" y="0"/>
-</item>
-<item historyLabel="Analizer.java" index="3">
-<position info="not_deleted" x="5701" y="0"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1681" y="0"/>
-</item>
-<item historyLabel="Analizer.java" index="3">
-<position info="not_deleted" x="5701" y="0"/>
-</item>
-<item historyLabel="Analizer.java" index="3">
-<position info="not_deleted" x="6282" y="0"/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="377" y="0"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1681" y="0"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1706" y="0"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1632" y="49"/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="714" y="66"/>
-</item>
-<item historyLabel="SinglePhraseSelector.java" index="0">
-<position info="not_deleted" x="1879" y="47"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1632" y="49"/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="714" y="66"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position info="not_deleted" x="1632" y="49"/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="714" y="66"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="714" y="66"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position/>
-</item>
-<item historyLabel="SinglePhraseSelector.java" index="0">
-<position info="not_deleted" x="1879" y="47"/>
-</item>
-<item historyLabel="UI.java" index="2">
-<position/>
-</item>
-<item historyLabel="WholeSongAnalysis.java" index="1">
-<position info="not_deleted" x="714" y="66"/>
-</item>
 <item historyLabel="SinglePhraseSelector.java" index="0">
 <position info="not_deleted" x="1879" y="47"/>
 </item>
@@ -610,8 +476,128 @@
 <item historyLabel="Analizer.java" index="3">
 <position info="not_deleted" x="6282" y="0"/>
 </item>
-<item active="true" historyLabel="Analizer.java" index="3">
+<item historyLabel="Analizer.java" index="3">
 <position info="not_deleted" x="6327" y="0"/>
+</item>
+<item historyLabel="UI.java" index="4">
+<position info="not_deleted" x="1325" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="150" y="0"/>
+</item>
+<item historyLabel="WholeSongAnalysis.java" index="6">
+<position info="not_deleted" x="714" y="66"/>
+</item>
+<item historyLabel="UI.java" index="4">
+<position info="not_deleted" x="1325" y="0"/>
+</item>
+<item historyLabel="WholeSongAnalysis.java" index="6">
+<position info="not_deleted" x="714" y="0"/>
+</item>
+<item historyLabel="Analizer.java" index="3">
+<position info="not_deleted" x="6329" y="0"/>
+</item>
+<item historyLabel="Analizer.java" index="3">
+<position info="not_deleted" x="7413" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="150" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13344" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12066" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13347" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12209" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12385" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13298" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12209" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12209" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12209" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12208" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12430" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13046" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12467" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13108" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13171" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13271" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12568" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12570" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="12732" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13254" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13253" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13256" y="0"/>
+</item>
+<item historyLabel="Analizer.java" index="3">
+<position info="not_deleted" x="7413" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13256" y="0"/>
+</item>
+<item historyLabel="Analizer.java" index="3">
+<position info="not_deleted" x="7413" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13256" y="0"/>
+</item>
+<item historyLabel="UI.java" index="4">
+<position info="not_deleted" x="1075" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="11821" y="30"/>
+</item>
+<item historyLabel="UI.java" index="4">
+<position info="not_deleted" x="1073" y="0"/>
+</item>
+<item historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="974" y="11"/>
+</item>
+<item historyLabel="UI.java" index="4">
+<position info="not_deleted" x="1073" y="0"/>
+</item>
+<item active="true" historyLabel="Reader.java" index="5">
+<position info="not_deleted" x="13113" y="61"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

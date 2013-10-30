@@ -1,12 +1,16 @@
 package jmusicpackage;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.util.*;
 
 public class Analizer{
 
-	static File libraryPercentStorage = new File("Test 3 Results/Library Percents.txt");
+	static File libraryPercentStorage = new File("Test 4 Results/Library Percents.txt");
 	static File songPhraseTreeStorage = new File("Test 3 Results/100 length left hand/Random Song Trees.txt");
+
+
+    static BigDecimal large = new BigDecimal(0);
 
 
     static TreeMap<Integer, Integer> songPhrasePitchTree = new TreeMap<Integer, Integer>();
@@ -153,16 +157,24 @@ public class Analizer{
         try{
         	if(results.exists()){
         		Scanner fileScanner = new Scanner(results);
-        		float pitch = Float.parseFloat(fileScanner.nextLine());
-        		float rhythm = Float.parseFloat(fileScanner.nextLine());
+        		double likelihood = Float.parseFloat(fileScanner.nextLine());
+        		double pitch = Float.parseFloat(fileScanner.nextLine());
+        		double rhythm = Float.parseFloat(fileScanner.nextLine());
         		fileScanner.close();
         		BufferedWriter writer = new BufferedWriter(new FileWriter(results,false));
-        		writer.write((pitch*bachPitchLikelihood/chopinPitchLikelihood)+"\n");
-        		writer.write((rhythm*bachRhythmLikelihood/chopinRhythmLikelihood)+"\n");
+        		writer.write((likelihood*((bachPitchLikelihood/chopinPitchLikelihood)*(bachRhythmLikelihood/chopinRhythmLikelihood)))+"\n");
+        		large = large.multiply(new BigDecimal((bachPitchLikelihood/chopinPitchLikelihood)*(bachRhythmLikelihood/chopinRhythmLikelihood)));
+        		System.out.println(large.doubleValue());
+        		System.out.println(likelihood);
+        		writer.write((pitch*(bachPitchLikelihood/chopinPitchLikelihood))+"\n");
+        		writer.write((rhythm*(bachRhythmLikelihood/chopinRhythmLikelihood))+"\n");
         		writer.close();
         	}
     		else{
         		BufferedWriter writer = new BufferedWriter(new FileWriter(results,false));
+        		writer.write(((bachPitchLikelihood/chopinPitchLikelihood)*(bachRhythmLikelihood/chopinRhythmLikelihood))+"\n");
+    			large = new BigDecimal(((bachPitchLikelihood/chopinPitchLikelihood)*(bachRhythmLikelihood/chopinRhythmLikelihood)));
+        		System.out.println(((bachPitchLikelihood/chopinPitchLikelihood)*(bachRhythmLikelihood/chopinRhythmLikelihood)));
     			writer.write((bachPitchLikelihood/chopinPitchLikelihood)+"\n");
     			writer.write((bachRhythmLikelihood/chopinRhythmLikelihood)+"\n");
     			writer.close();
