@@ -1,0 +1,52 @@
+package jmusicpackage;
+
+import javax.swing.*;
+import javax.swing.filechooser.*;
+import java.util.Scanner;
+
+public class UI {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println("Enter operation (read/singleAna/WholeSongAna): ");
+
+		Scanner scanIn = new Scanner(System.in);
+		String input = scanIn.nextLine();
+		input = input.toLowerCase();
+
+	    scanIn.close();
+
+	    if(input.equals("read")){
+
+	    }
+	    else if(input.equals("singleana")){
+	    	JFileChooser chooser = new JFileChooser();
+		    FileNameExtensionFilter filter = new FileNameExtensionFilter(
+		        "Midi files", "mid");
+		    chooser.setFileFilter(filter);
+		    int returnVal = chooser.showOpenDialog(null);
+		    if(returnVal == JFileChooser.APPROVE_OPTION) {
+		       String filePath = chooser.getSelectedFile().getAbsolutePath();
+		       SinglePhraseSelector.analyze(filePath, 100, 1, 0, 0);
+	    }
+	    else if(input.equals("wholesongana")){
+	    	JFileChooser chooser = new JFileChooser();
+		    FileNameExtensionFilter filter = new FileNameExtensionFilter(
+		        "Midi files", "mid");
+		    chooser.setFileFilter(filter);
+		    int returnVal = chooser.showOpenDialog(null);
+		    if(returnVal == JFileChooser.APPROVE_OPTION) {
+		       String filePath = chooser.getSelectedFile().getAbsolutePath();
+		       SinglePhraseSelector.analyze(filePath, 100, 1, 0, 0);
+		       WholeSongAnalysis.analyze(filePath,50);
+	    }
+	    else{
+	    	//default
+	    }
+
+	    }
+	}
+
+}

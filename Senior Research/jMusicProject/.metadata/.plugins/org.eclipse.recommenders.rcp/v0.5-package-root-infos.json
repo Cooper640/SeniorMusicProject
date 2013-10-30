@@ -1,0 +1,210 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c7fea395d8246fe6ac3f43e6283e9e8022006797",
+    "jarFileModificationDate": "2013-08-02T13:30:54.768-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8303669499f816eb1536f08f7b99d21924fb85b8",
+    "jarFileModificationDate": "2013-08-02T13:30:49.242-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f4e50ce26184730f4e371fad52ec03bca3e52859",
+    "jarFileModificationDate": "2013-08-02T13:30:49.173-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\access-bridge-64.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "911621bc30f4b29fec35eb583121a018189510f1",
+    "jarFileModificationDate": "2013-08-02T13:30:54.790-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0a4d4f4cad115256868f9de4e475ad4754f6e6c4",
+    "jarFileModificationDate": "2013-08-02T13:30:49.180-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c4c7923b11e98bc8d1d32bfd2ff6363d212ead80",
+    "jarFileModificationDate": "2013-08-02T13:30:49.220-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f831655c50b92c41e366442d09511ea84270c45e",
+    "jarFileModificationDate": "2013-08-02T13:30:49.317-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
+    "jarFileModificationDate": "2013-08-02T13:30:49.241-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bc3b2d68e2ea959b23888e907993644e3f8c1ea1",
+    "jarFileModificationDate": "2013-08-02T13:30:54.606-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jMusic1.6.4 (1)",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5c4b128cbeee0ba71e00c85ada7320d95c66b6e0",
+    "jarFileModificationDate": "2013-09-16T10:09:09.967-05:00",
+    "location": "C:\\Users\\tjenkins01\\Downloads\\jMusic1.6.4 (1).jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8548061f982dcc8843b280dfd86d3fffff57bb59",
+    "jarFileModificationDate": "2013-08-02T13:30:49.318-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "77df74be5591c718de35ca1768786d3901103afe",
+    "jarFileModificationDate": "2013-08-02T13:30:49.206-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jMusic1.6.4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5c4b128cbeee0ba71e00c85ada7320d95c66b6e0",
+    "jarFileModificationDate": "2013-09-16T10:08:40.591-05:00",
+    "location": "C:\\Users\\tjenkins01\\Downloads\\jMusic1.6.4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "cbb58ca9ff2758edb4f29b8570cfc9fe7aa3a150",
+    "jarFileModificationDate": "2013-08-02T13:30:54.557-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bacccb018b46271cd93f83e38c277158a39f591e",
+    "jarFileModificationDate": "2013-08-02T13:30:49.410-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5da320e46f1c616986563b2e788b5a0569cad088",
+    "jarFileModificationDate": "2013-08-02T13:30:49.221-05:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  }
+]
