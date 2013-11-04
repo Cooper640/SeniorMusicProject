@@ -380,10 +380,10 @@ public class Reader implements JMC {
 		        		bach = false;
 		        		percentWriter.write("Chopin\n");
 		        	}
-		        	else if(input.equals("Pitches")){
+		        	else if(input.equals("Pitch")){
 		        		pitch = true;
 		        		rhythm = false;
-		        		percentWriter.write("Pitches\n");
+		        		percentWriter.write("Pitch\n");
 		        	}
 		        	else if(input.equals("Rhythm")){
 		        		rhythm = true;

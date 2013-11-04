@@ -16,8 +16,6 @@ public class Reader implements JMC {
     static int cPitchTotal = 0;
     static int cRhythmTotal = 0;
 
-    static boolean useWeighted = false;
-
 
 	static String bachSongName = "Songs/Bach/cs2-4.mid";
 	static String chopinSongName = "Songs/Chopin/chpn-p10.mid";
@@ -264,9 +262,6 @@ public class Reader implements JMC {
 	        }
 	        writer.close();
 	        percentWriter.close();
-
-	        //doing weighted percents
-
         }
         catch(IOException e){}
 
@@ -311,10 +306,9 @@ public class Reader implements JMC {
     	main(a);
     }
 
-    static void weightRhythms(String treeFile, String percentFile){
+    static void weightRhythms(String treeFile){
 	    try{
 	        File treeStorage = new File(treeFile);
-	        File percentStorage = new File(percentFile);
 	        if(treeStorage.exists()){
 				Scanner fileScanner = new Scanner(treeStorage);
 		        File weightedRhythms = new File("weightedRhythms.txt");
@@ -332,84 +326,37 @@ public class Reader implements JMC {
 		        	if(!lineScanner.hasNext()&&count==0){
 		        		bach = true;
 		        		chopin = false;
+		        		weightedWriter.write("Bach\n");
+		        		weightedWriter.write((int)key+"\n");
+		        		count++;
 		        	}
 		        	else if (!lineScanner.hasNext()&&count==2){
 		        		chopin = true;
 		        		bach = false;
+		        		weightedWriter.write("Chopin\n");
+		        		weightedWriter.write((int)key+"\n");
+		        		count++;
 		        	}
 		        	if(!lineScanner.hasNext()&&(count==0||count==2)){
 		        		pitch = true;
 		        		rhythm = false;
-		        		weightedWriter.write((int)key+"\n");
 		        		count++;
 		        	}
 		        	else if(!lineScanner.hasNext()){
 		        		rhythm = true;
 		        		pitch = false;
-		        		weightedWriter.write((int)key+"\n");
 		        		count++;
 		        	}
 		        	else{
 		        		int value = Integer.parseInt(lineScanner.next());
 		        		if(rhythm){
-		        			weightedWriter.write(key+" "+(key*value)+"\n");
+		        			weightedWriter.write(key+" "+(key*value));
 		        		}
 		        	}
 		        }
-		        weightedWriter.close();
-	        }
-
-	        if(percentStorage.exists()){
-				Scanner fileScanner = new Scanner(percentStorage);
-		        File weightedPercents = new File("weightedPercents.txt");
-		        BufferedWriter percentWriter = new BufferedWriter(new FileWriter(weightedPercents,false));
-		        String input = new String();
-		        boolean bach = false;
-		        boolean chopin = false;
-		        boolean pitch = false;
-		        boolean rhythm = false;
-		        while(fileScanner.hasNext()){
-		        	input = fileScanner.nextLine();
-		        	if(input.equals("Bach")){
-		        		bach = true;
-		        		chopin = false;
-		        		percentWriter.write("Bach\n");
-		        	}
-		        	else if (input.equals("Chopin")){
-		        		chopin = true;
-		        		bach = false;
-		        		percentWriter.write("Chopin\n");
-		        	}
-		        	else if(input.equals("Pitches")){
-		        		pitch = true;
-		        		rhythm = false;
-		        		percentWriter.write("Pitches\n");
-		        	}
-		        	else if(input.equals("Rhythm")){
-		        		rhythm = true;
-		        		pitch = false;
-		        		percentWriter.write("Rhythm\n");
-		        	}
-		        	else{
-		        		Scanner lineScanner = new Scanner(input);
-		        		float key = Float.parseFloat(lineScanner.next());
-		        		float value = Float.parseFloat(lineScanner.next());
-		        		if(pitch){
-		        			percentWriter.write((int)key+" "+value+"\n");
-		        		}
-		        		if(rhythm){
-		        			percentWriter.write(key+" "+(key*value)+"\n");
-		        		}
-		        	}
-		        }
-		        percentWriter.close();
 	        }
     	}
 	    catch(IOException e){}
 	}
-
-    static void percentsUsingWeightedRhythm(){
-    	Reader.useWeighted = true;
-    }
 
 }

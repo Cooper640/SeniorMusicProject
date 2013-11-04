@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Analizer{
 
-	static File libraryPercentStorage = new File("Test 4 Results/Library Percents.txt");
+	static File libraryPercentStorage = new File("Test 4 Results/Weighted Percents.txt");
 	static File songPhraseTreeStorage = new File("Test 3 Results/100 length left hand/Random Song Trees.txt");
 
 

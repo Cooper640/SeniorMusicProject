@@ -383,9 +383,9 @@ public class Reader implements JMC {
 		        	else if(input.equals("Pitches")){
 		        		pitch = true;
 		        		rhythm = false;
-		        		percentWriter.write("Pitches\n");
+		        		percentWriter.write("Pitch\n");
 		        	}
-		        	else if(input.equals("Rhythm")){
+		        	else if(input.equals("Rhythms")){
 		        		rhythm = true;
 		        		pitch = false;
 		        		percentWriter.write("Rhythm\n");

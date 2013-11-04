@@ -383,7 +383,7 @@ public class Reader implements JMC {
 		        	else if(input.equals("Pitches")){
 		        		pitch = true;
 		        		rhythm = false;
-		        		percentWriter.write("Pitches\n");
+		        		percentWriter.write("Pitch\n");
 		        	}
 		        	else if(input.equals("Rhythm")){
 		        		rhythm = true;
