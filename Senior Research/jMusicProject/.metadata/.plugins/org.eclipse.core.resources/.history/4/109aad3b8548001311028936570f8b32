@@ -16,6 +16,8 @@ public class Reader implements JMC {
     static int cPitchTotal = 0;
     static int cRhythmTotal = 0;
 
+    static boolean useWeighted = false;
+
 
 	static String bachSongName = "Songs/Bach/cs2-4.mid";
 	static String chopinSongName = "Songs/Chopin/chpn-p10.mid";
@@ -98,6 +100,39 @@ public class Reader implements JMC {
         for(int i = 0; i < song.getSize(); i++){
         	maryPhrases[i] = songParts[i].getPhraseArray();
         	for(int j=0; j<songParts[i].getSize(); j++){
+
+        		int keysig = 0;
+        		int[] scale = MAJOR_SCALE;
+        		int sharpsflats = song.getKeySignature();
+        		if(sharpsflats<0){
+        			if(sharpsflats==-1) keysig=5;
+        			else if(sharpsflats==-2) keysig=10;
+        			else if(sharpsflats==-3) keysig=3;
+        			else if(sharpsflats==-4) keysig=8;
+        			else if(sharpsflats==-5) keysig=1;
+        			else if(sharpsflats==-6) keysig=6;
+        			else if(sharpsflats==-7) keysig=11;
+        		}
+        		else if(sharpsflats>0){
+        			if(sharpsflats==1) keysig=7;
+        			else if(sharpsflats==2) keysig=2;
+        			else if(sharpsflats==3) keysig=9;
+        			else if(sharpsflats==4) keysig=4;
+        			else if(sharpsflats==5) keysig=11;
+        			else if(sharpsflats==6) keysig=6;
+        			else if(sharpsflats==7) keysig=1;
+        		}
+        		if(song.getKeyQuality()==1) scale=MINOR_SCALE;
+        		String[] stats = PhraseAnalysis.getAllStatisticsAsStrings(maryPhrases[i][j], 1.0, keysig, scale);
+        		try{
+        			BufferedWriter writer = new BufferedWriter(new FileWriter(bachSongName+"statistics.txt",false));
+        			for (int m=0; m<stats.length; m++){
+        				if(m!=stats.length-1) writer.write(stats[m]+" ");
+        				else writer.write(stats[m]+"\n");
+        			}
+        		}
+        		catch(IOException e){}
+
         		int[] pitchintervals = PhraseAnalysis.pitchIntervals(maryPhrases[i][j]);
         		//System.out.println("Pitch intervals");
         		if(pitchintervals.length!=0){
@@ -262,6 +297,9 @@ public class Reader implements JMC {
 	        }
 	        writer.close();
 	        percentWriter.close();
+
+	        //doing weighted percents
+
         }
         catch(IOException e){}
 
@@ -306,13 +344,58 @@ public class Reader implements JMC {
     	main(a);
     }
 
-    static void weightRhythms(String treeFile){
+    static void weightRhythms(String treeFile, String percentFile){
 	    try{
 	        File treeStorage = new File(treeFile);
+	        File percentStorage = new File(percentFile);
 	        if(treeStorage.exists()){
 				Scanner fileScanner = new Scanner(treeStorage);
 		        File weightedRhythms = new File("weightedRhythms.txt");
 		        BufferedWriter weightedWriter = new BufferedWriter(new FileWriter(weightedRhythms,false));
+		        String input = new String();
+		        boolean bach = false;
+		        boolean chopin = false;
+		        boolean pitch = false;
+		        boolean rhythm = false;
+		        int count = 0;
+		        while(fileScanner.hasNext()){
+		        	input = fileScanner.nextLine();
+	        		Scanner lineScanner = new Scanner(input);
+	        		float key = Float.parseFloat(lineScanner.next());
+		        	if(!lineScanner.hasNext()&&count==0){
+		        		bach = true;
+		        		chopin = false;
+		        	}
+		        	else if (!lineScanner.hasNext()&&count==2){
+		        		chopin = true;
+		        		bach = false;
+		        	}
+		        	if(!lineScanner.hasNext()&&(count==0||count==2)){
+		        		pitch = true;
+		        		rhythm = false;
+		        		weightedWriter.write((int)key+"\n");
+		        		count++;
+		        	}
+		        	else if(!lineScanner.hasNext()){
+		        		rhythm = true;
+		        		pitch = false;
+		        		weightedWriter.write((int)key+"\n");
+		        		count++;
+		        	}
+		        	else{
+		        		int value = Integer.parseInt(lineScanner.next());
+		        		if(rhythm){
+		        			weightedWriter.write(key+" "+(key*value)+"\n");
+		        		}
+		        	}
+		        }
+		        weightedWriter.close();
+	        }
+
+	        if(percentStorage.exists()){
+				Scanner fileScanner = new Scanner(percentStorage);
+		        File weightedPercents = new File("weightedPercents.txt");
+		        BufferedWriter percentWriter = new BufferedWriter(new FileWriter(weightedPercents,false));
 		        String input = new String();
 		        boolean bach = false;
 		        boolean chopin = false;
@@ -323,33 +406,43 @@ public class Reader implements JMC {
 		        	if(input.equals("Bach")){
 		        		bach = true;
 		        		chopin = false;
-		        		weightedWriter.write("Bach\n");
+		        		percentWriter.write("Bach\n");
 		        	}
 		        	else if (input.equals("Chopin")){
 		        		chopin = true;
 		        		bach = false;
-		        		weightedWriter.write("Chopin\n");
+		        		percentWriter.write("Chopin\n");
 		        	}
-		        	else if(input.equals("Pitch")){
+		        	else if(input.equals("Pitches")){
 		        		pitch = true;
 		        		rhythm = false;
+		        		percentWriter.write("Pitches\n");
 		        	}
 		        	else if(input.equals("Rhythm")){
 		        		rhythm = true;
 		        		pitch = false;
+		        		percentWriter.write("Rhythm\n");
 		        	}
 		        	else{
 		        		Scanner lineScanner = new Scanner(input);
-		        		int key = Integer.parseInt(lineScanner.next());
-		        		int value = Integer.parseInt(lineScanner.next());
+		        		float key = Float.parseFloat(lineScanner.next());
+		        		float value = Float.parseFloat(lineScanner.next());
+		        		if(pitch){
+		        			percentWriter.write((int)key+" "+value+"\n");
+		        		}
 		        		if(rhythm){
-		        			weightedWriter.write(key+" "+(key*value));
+		        			percentWriter.write(key+" "+(key*value)+"\n");
 		        		}
 		        	}
 		        }
+		        percentWriter.close();
 	        }
     	}
 	    catch(IOException e){}
 	}
+
+    static void percentsUsingWeightedRhythm(){
+    	Reader.useWeighted = true;
+    }
 
 }

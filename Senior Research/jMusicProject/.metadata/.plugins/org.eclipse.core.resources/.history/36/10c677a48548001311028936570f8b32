@@ -125,7 +125,7 @@ public class Reader implements JMC {
         		if(song.getKeyQuality()==1) scale=MINOR_SCALE;
         		String[] stats = PhraseAnalysis.getAllStatisticsAsStrings(maryPhrases[i][j], 1.0, keysig, scale);
         		try{
-        			BufferedWriter writer = new BufferedWriter(new FileWriter(bachSongName+"statistics.txt",true));
+        			BufferedWriter writer = new BufferedWriter(new FileWriter(bachSongName+"statistics.txt",false));
         			for (int m=0; m<stats.length; m++){
         				if(m!=stats.length-1) writer.write(stats[m]+" ");
         				else writer.write(stats[m]+"\n");
