@@ -101,9 +101,11 @@ public class Reader implements JMC {
         	maryPhrases[i] = songParts[i].getPhraseArray();
         	for(int j=0; j<songParts[i].getSize(); j++){
 
+        		
         		int keysig = 0;
         		int[] scale = MAJOR_SCALE;
         		int sharpsflats = song.getKeySignature();
+        		System.out.println(sharpsflats+" "+song.getKeyQuality());
         		if(sharpsflats<0){
         			if(sharpsflats==-1) keysig=5;
         			else if(sharpsflats==-2) keysig=10;
@@ -123,9 +125,12 @@ public class Reader implements JMC {
         			else if(sharpsflats==7) keysig=1;
         		}
         		if(song.getKeyQuality()==1) scale=MINOR_SCALE;
-        		String[] stats = PhraseAnalysis.getAllStatisticsAsStrings(maryPhrases[i][j], 1.0, keysig, scale);
+        		String[] stats = PhraseAnalysis.getAllStatisticsAsStrings(maryPhrases[i][j], maryPhrases[i][j].getBeatLength(), keysig, scale);
+        		String bachtitle = bachSongName.substring(bachSongName.lastIndexOf('\\')+1, bachSongName.lastIndexOf('.'));
         		try{
-        			BufferedWriter writer = new BufferedWriter(new FileWriter(bachSongName+"statistics.txt",true));
+        			File bachDestination = new File("Songs/Bach song stats/"+bachtitle+"statistics.txt");
+        			BufferedWriter writer = new BufferedWriter(new FileWriter(bachDestination,true));
+        			writer.write(String.valueOf(maryPhrases[i][j].getSize()) + " ");
         			for (int m=0; m<stats.length; m++){
         				if(m!=stats.length-1) writer.write(stats[m]+" ");
         				else writer.write(stats[m]+"\n");
@@ -134,6 +139,7 @@ public class Reader implements JMC {
         		}
         		catch(IOException e){}
 
+        		
         		int[] pitchintervals = PhraseAnalysis.pitchIntervals(maryPhrases[i][j]);
         		//System.out.println("Pitch intervals");
         		if(pitchintervals.length!=0){
@@ -189,6 +195,46 @@ public class Reader implements JMC {
         for(int i = 0; i < cSong.getSize(); i++){
         	chopinPhrases[i] = cSongParts[i].getPhraseArray();
         	for(int j=0; j<cSongParts[i].getSize(); j++){
+        		
+        		
+        		int keysig = 0;
+        		int[] scale = MAJOR_SCALE;
+        		int sharpsflats = cSong.getKeySignature();
+        		System.out.println(sharpsflats+" "+cSong.getKeyQuality());
+        		if(sharpsflats<0){
+        			if(sharpsflats==-1) keysig=5;
+        			else if(sharpsflats==-2) keysig=10;
+        			else if(sharpsflats==-3) keysig=3;
+        			else if(sharpsflats==-4) keysig=8;
+        			else if(sharpsflats==-5) keysig=1;
+        			else if(sharpsflats==-6) keysig=6;
+        			else if(sharpsflats==-7) keysig=11;
+        		}
+        		else if(sharpsflats>0){
+        			if(sharpsflats==1) keysig=7;
+        			else if(sharpsflats==2) keysig=2;
+        			else if(sharpsflats==3) keysig=9;
+        			else if(sharpsflats==4) keysig=4;
+        			else if(sharpsflats==5) keysig=11;
+        			else if(sharpsflats==6) keysig=6;
+        			else if(sharpsflats==7) keysig=1;
+        		}
+        		if(song.getKeyQuality()==1) scale=MINOR_SCALE;
+        		String[] stats = PhraseAnalysis.getAllStatisticsAsStrings(chopinPhrases[i][j], chopinPhrases[i][j].getBeatLength(), keysig, scale);
+        		String chopintitle = chopinSongName.substring(chopinSongName.lastIndexOf('\\')+1, chopinSongName.lastIndexOf('.'));
+        		try{
+        			File chopinDestination = new File("Songs/Chopin song stats/"+chopintitle+"statistics.txt");
+        			BufferedWriter writer = new BufferedWriter(new FileWriter(chopinDestination,true));
+        			writer.write(String.valueOf(chopinPhrases[i][j].getSize()) + " ");
+        			for (int m=0; m<stats.length; m++){
+        				if(m!=stats.length-1) writer.write(stats[m]+" ");
+        				else writer.write(stats[m]+"\n");
+        			}
+        			writer.close();
+        		}
+        		catch(IOException e){}
+        		
+        		
         		int[] pitchintervals = PhraseAnalysis.pitchIntervals(chopinPhrases[i][j]);
         		//System.out.println("Pitch intervals");
         		if(pitchintervals.length!=0){
@@ -248,25 +294,25 @@ public class Reader implements JMC {
 	        //Bach
 	        Iterator<Integer> bPitchIterator = pitchTree.keySet().iterator();
 	        Iterator<Double> bRhythmIterator = rhythmTree.keySet().iterator();
-	        System.out.println("Bach pitch interval total: " + Reader.bPitchTotal);
+	        //System.out.println("Bach pitch interval total: " + Reader.bPitchTotal);
 	        writer.write(Reader.bPitchTotal + "\n");
-	        System.out.println("Pitchtes:");
+	        //System.out.println("Pitchtes:");
 	        percentWriter.write("Bach" + "\n" + "Pitches" + "\n");
 	        while(bPitchIterator.hasNext()){
 	        	int cur = bPitchIterator.next();
-	        	System.out.print(cur + " ");
-	        	System.out.println(pitchTree.get(cur));
+	        	//System.out.print(cur + " ");
+	        	//System.out.println(pitchTree.get(cur));
 	        	writer.write(cur + " " + pitchTree.get(cur) + "\n");
 	        	percentWriter.write(cur + " " + (((double)pitchTree.get(cur)/(double)Reader.bPitchTotal)*100) + "\n");
 	        }
-	        System.out.println("Bach note total: " + Reader.bRhythmTotal);
+	        //System.out.println("Bach note total: " + Reader.bRhythmTotal);
 	        writer.write(Reader.bRhythmTotal + "\n");
-	        System.out.println("Rhytmic Lengths:");
+	        //System.out.println("Rhytmic Lengths:");
 	        percentWriter.write("Rhythm" + "\n");
 	        while(bRhythmIterator.hasNext()){
 	        	double cur = bRhythmIterator.next();
-	        	System.out.print(cur + " ");
-	        	System.out.println(rhythmTree.get(cur));
+	        	//System.out.print(cur + " ");
+	        	//System.out.println(rhythmTree.get(cur));
 	        	writer.write(cur + " " + rhythmTree.get(cur) + "\n");
 	        	percentWriter.write(cur + " " + (((double)rhythmTree.get(cur)/(double)Reader.bRhythmTotal)*100) + "\n");
 	        }
@@ -274,25 +320,25 @@ public class Reader implements JMC {
 	        //Chopin
 	        Iterator<Integer> cPitchIterator = cPitchTree.keySet().iterator();
 	        Iterator<Double> cRhythmIterator = cRhythmTree.keySet().iterator();
-	        System.out.println("Chopin pitch interval total: " + Reader.cPitchTotal);
+	        //System.out.println("Chopin pitch interval total: " + Reader.cPitchTotal);
 	        writer.write(Reader.cPitchTotal + "\n");
-	        System.out.println("Pitchtes:");
+	        //System.out.println("Pitchtes:");
 	        percentWriter.write("Chopin" + "\n" + "Pitches" + "\n");
 	        while(cPitchIterator.hasNext()){
 	        	int cur = cPitchIterator.next();
-	        	System.out.print(cur + " ");
-	        	System.out.println(cPitchTree.get(cur));
+	        	//System.out.print(cur + " ");
+	        	//System.out.println(cPitchTree.get(cur));
 	        	writer.write(cur + " " + cPitchTree.get(cur) + "\n");
 	        	percentWriter.write(cur + " " + (((double)cPitchTree.get(cur)/(double)Reader.cPitchTotal)*100) + "\n");
 	        }
-	        System.out.println("Chopin note total: " + Reader.cRhythmTotal);
+	        //System.out.println("Chopin note total: " + Reader.cRhythmTotal);
 	        writer.write(Reader.cRhythmTotal + "\n");
-	        System.out.println("Rhytmic Lengths:");
+	        //System.out.println("Rhytmic Lengths:");
 	        percentWriter.write("Rhythm" + "\n");
 	        while(cRhythmIterator.hasNext()){
 	        	double cur = cRhythmIterator.next();
-	        	System.out.print(cur + " ");
-	        	System.out.println(cRhythmTree.get(cur));
+	        	//System.out.print(cur + " ");
+	        	//System.out.println(cRhythmTree.get(cur));
 	        	writer.write(cur + " " + cRhythmTree.get(cur) + "\n");
 	        	percentWriter.write(cur + " " + (((double)cRhythmTree.get(cur)/(double)Reader.cRhythmTotal)*100) + "\n");
 	        }
