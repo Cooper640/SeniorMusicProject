@@ -1,0 +1,3 @@
+likelyhood: Infinity
+pitch likelyhood: 0.0
+rhythm likelyhood: Infinity
