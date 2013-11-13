@@ -2,6 +2,7 @@ package jmusicpackage;
 
 import java.io.*;
 import java.util.*;
+
 import jm.JMC;
 import jm.music.data.*;
 import jm.music.tools.*;
@@ -101,7 +102,7 @@ public class Reader implements JMC {
         	maryPhrases[i] = songParts[i].getPhraseArray();
         	for(int j=0; j<songParts[i].getSize(); j++){
 
-        		
+        		//pitch relative to key
         		int keysig = 0;
         		int[] scale = MAJOR_SCALE;
         		int sharpsflats = song.getKeySignature();
@@ -125,6 +126,16 @@ public class Reader implements JMC {
         			else if(sharpsflats==7) keysig=1;
         		}
         		if(song.getKeyQuality()==1) scale=MINOR_SCALE;
+        		Note[] notes = maryPhrases[i][j].getNoteArray();
+        		for(int m = 0; m<notes.length; m++){
+        			int middlescalevalue = notes[m].getPitchValue();
+        			boolean inKey = notes[m].isScale(scale);
+        			int distance = Math.abs(middlescalevalue-keysig);
+        			System.out.println(middlescalevalue+" "+inKey);
+        		}
+
+        		//Attempt to use the get all statistics phrase analysis tool
+        		/*
         		String[] stats = PhraseAnalysis.getAllStatisticsAsStrings(maryPhrases[i][j], maryPhrases[i][j].getBeatLength(), keysig, scale);
         		String bachtitle = bachSongName.substring(bachSongName.lastIndexOf('\\')+1, bachSongName.lastIndexOf('.'));
         		try{
@@ -138,6 +149,7 @@ public class Reader implements JMC {
         			writer.close();
         		}
         		catch(IOException e){}
+        		*/
 
         		
         		int[] pitchintervals = PhraseAnalysis.pitchIntervals(maryPhrases[i][j]);
@@ -196,7 +208,7 @@ public class Reader implements JMC {
         	chopinPhrases[i] = cSongParts[i].getPhraseArray();
         	for(int j=0; j<cSongParts[i].getSize(); j++){
         		
-        		
+        		/*
         		int keysig = 0;
         		int[] scale = MAJOR_SCALE;
         		int sharpsflats = cSong.getKeySignature();
@@ -233,7 +245,7 @@ public class Reader implements JMC {
         			writer.close();
         		}
         		catch(IOException e){}
-        		
+        		*/
         		
         		int[] pitchintervals = PhraseAnalysis.pitchIntervals(chopinPhrases[i][j]);
         		//System.out.println("Pitch intervals");
@@ -365,7 +377,7 @@ public class Reader implements JMC {
     			Reader.bPitchTotal = Reader.bPitchTotal-pitchTreeIn.get(key);
     		}
     		else if(switcher=='c'){
-    			Reader.cPitchTotal = Reader.bPitchTotal-pitchTreeIn.get(key);
+    			Reader.cPitchTotal = Reader.cPitchTotal-pitchTreeIn.get(key);
     		}
     	}
     	return pitchTreeOut;
@@ -490,6 +502,7 @@ public class Reader implements JMC {
 
     static void percentsUsingWeightedRhythm(){
     	Reader.useWeighted = true;
+    	
     }
 
 }
