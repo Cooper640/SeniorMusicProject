@@ -108,30 +108,124 @@ public class Reader implements JMC {
         		int sharpsflats = song.getKeySignature();
         		System.out.println(sharpsflats+" "+song.getKeyQuality());
         		if(sharpsflats<0){
-        			if(sharpsflats==-1) keysig=5;
-        			else if(sharpsflats==-2) keysig=10;
-        			else if(sharpsflats==-3) keysig=3;
-        			else if(sharpsflats==-4) keysig=8;
-        			else if(sharpsflats==-5) keysig=1;
-        			else if(sharpsflats==-6) keysig=6;
-        			else if(sharpsflats==-7) keysig=11;
+        			if(sharpsflats==-1)
+        			{
+        				keysig=5;
+        				scale[6]--;
+        			}
+        			else if(sharpsflats==-2){
+        				keysig=10;
+        				scale[6]--;
+        				scale[2]--;
+        			}
+        			else if(sharpsflats==-3){
+        				keysig=3;
+        				scale[6]--;
+        				scale[2]--;
+        				scale[5]--;
+        			}
+        			else if(sharpsflats==-4){
+        				keysig=8;
+        				scale[6]--;
+        				scale[2]--;
+        				scale[5]--;
+        				scale[1]--;
+        			}
+        			else if(sharpsflats==-5){
+        				keysig=1;
+        				scale[6]--;
+        				scale[2]--;
+        				scale[5]--;
+        				scale[1]--;
+        				scale[4]--;
+        			}
+        			else if(sharpsflats==-6){
+        				keysig=6;
+        				scale[6]--;
+        				scale[2]--;
+        				scale[5]--;
+        				scale[1]--;
+        				scale[4]--;
+        				scale[0]=11;
+        			}
+        			else if(sharpsflats==-7){
+        				keysig=11;
+        				scale[6]--;
+        				scale[2]--;
+        				scale[5]--;
+        				scale[1]--;
+        				scale[4]--;
+        				scale[0]=11;
+        				scale[3]--;
+        			}
         		}
         		else if(sharpsflats>0){
-        			if(sharpsflats==1) keysig=7;
-        			else if(sharpsflats==2) keysig=2;
-        			else if(sharpsflats==3) keysig=9;
-        			else if(sharpsflats==4) keysig=4;
-        			else if(sharpsflats==5) keysig=11;
-        			else if(sharpsflats==6) keysig=6;
-        			else if(sharpsflats==7) keysig=1;
+        			if(sharpsflats==1){
+        				keysig=7;
+        				scale[3]++;
+        			}
+        			else if(sharpsflats==2){
+        				keysig=2;
+        				scale[0]++;
+        				scale[3]++;
+        			}
+        			else if(sharpsflats==3){
+        				keysig=9;
+        				scale[4]++;
+        				scale[0]++;
+        				scale[3]++;
+        			}
+        			else if(sharpsflats==4){
+        				keysig=4;
+        				scale[1]++;
+        				scale[4]++;
+        				scale[0]++;
+        				scale[3]++;
+        			}
+        			else if(sharpsflats==5){
+        				keysig=11;
+        				scale[5]++;
+        				scale[1]++;
+        				scale[4]++;
+        				scale[0]++;
+        				scale[3]++;
+        			}
+        			else if(sharpsflats==6){
+        				keysig=6;
+        				scale[2]++;
+        				scale[5]++;
+        				scale[1]++;
+        				scale[4]++;
+        				scale[0]++;
+        				scale[3]++;
+        			}
+        			else if(sharpsflats==7){
+        				keysig=1;
+        				scale[6]++;
+        				scale[2]++;
+        				scale[5]++;
+        				scale[1]++;
+        				scale[4]++;
+        				scale[0]++;
+        				scale[3]++;
+        			}
         		}
-        		if(song.getKeyQuality()==1) scale=MINOR_SCALE;
         		Note[] notes = maryPhrases[i][j].getNoteArray();
         		for(int m = 0; m<notes.length; m++){
+        			int temp = notes[m].getPitch();
+        			while(temp>12){
+        				temp=temp-12;
+        			}
         			int middlescalevalue = notes[m].getPitchValue();
         			boolean inKey = notes[m].isScale(scale);
-        			int distance = Math.abs(middlescalevalue-keysig);
-        			System.out.println(middlescalevalue+" "+inKey);
+        			int scaleDegree = 0;
+        			if(inKey){
+	        			for(int n=0; n<scale.length; n++){
+	        				if(scale[n]==temp) scaleDegree = n;
+	        			}
+        			}
+        			int distance = Math.abs(temp-keysig);
+        			System.out.println(temp+" "+inKey+" "+distance+" "+scaleDegree);
         		}
 
         		//Attempt to use the get all statistics phrase analysis tool
@@ -151,7 +245,7 @@ public class Reader implements JMC {
         		catch(IOException e){}
         		*/
 
-        		
+
         		int[] pitchintervals = PhraseAnalysis.pitchIntervals(maryPhrases[i][j]);
         		//System.out.println("Pitch intervals");
         		if(pitchintervals.length!=0){
@@ -207,7 +301,7 @@ public class Reader implements JMC {
         for(int i = 0; i < cSong.getSize(); i++){
         	chopinPhrases[i] = cSongParts[i].getPhraseArray();
         	for(int j=0; j<cSongParts[i].getSize(); j++){
-        		
+
         		/*
         		int keysig = 0;
         		int[] scale = MAJOR_SCALE;
@@ -246,7 +340,7 @@ public class Reader implements JMC {
         		}
         		catch(IOException e){}
         		*/
-        		
+
         		int[] pitchintervals = PhraseAnalysis.pitchIntervals(chopinPhrases[i][j]);
         		//System.out.println("Pitch intervals");
         		if(pitchintervals.length!=0){
@@ -502,7 +596,7 @@ public class Reader implements JMC {
 
     static void percentsUsingWeightedRhythm(){
     	Reader.useWeighted = true;
-    	
+
     }
 
 }
