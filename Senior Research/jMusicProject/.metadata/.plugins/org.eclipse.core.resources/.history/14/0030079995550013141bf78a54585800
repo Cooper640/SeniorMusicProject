@@ -1,6 +1,6 @@
 package jmusicpackage;
 
-public class Test {
+public class GeneralReader {
 
 	/**
 	 * @param args
