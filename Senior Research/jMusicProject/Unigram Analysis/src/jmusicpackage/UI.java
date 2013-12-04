@@ -23,8 +23,6 @@ public class UI {
 		String input = scanIn.nextLine();
 		input = input.toLowerCase();
 
-	    scanIn.close();
-
 	    if(input.equals("r")){
 	    	File bpath = new File("Songs/Bach");
 	    	File [] bfiles = bpath.listFiles();
@@ -49,12 +47,27 @@ public class UI {
 		    if(returnVal == JFileChooser.APPROVE_OPTION) {
 		       String filePath = chooser.getSelectedFile().getAbsolutePath();
 		       //WholeSongAnalysis analizer = new WholeSongAnalysis();
-		       WholeSongAnalysis.analyze(filePath,100);
+		       WholeSongAnalysisBigram.analyze(filePath,50);
 		    }
+	    }
+	    else if(input.equals("gr")){
+	    	System.out.println("Enter Composer Name: ");
+			input = scanIn.nextLine();
+	    	File path = new File("Songs/"+input);
+	    	File [] files = path.listFiles();
+	    	for (int i = 0; i < files.length; i++){
+	            if (files[i].isFile()){
+	            	GeneralReader.read(files[i].getPath(),input);
+	            }
+	    	}
 	    }
 	    else{
 	    	//default
 	    }
+
+
+
+	    scanIn.close();
 	}
 
 }

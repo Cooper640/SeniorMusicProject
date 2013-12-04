@@ -15,8 +15,10 @@ public class GeneralReader implements JMC {
 
 	public static void read(String songPath, String name){
 
-		TreeMap<Integer, Integer> pitchTree = new TreeMap<Integer, Integer>();
-        TreeMap<Double, Integer> rhythmTree = new TreeMap<Double, Integer>();
+		//TreeMap<Integer, Integer> pitchTree = new TreeMap<Integer, Integer>();
+		TreeMap<String, Integer> pitchByKeyTree = new TreeMap<String, Integer>();
+        TreeMap<String, Integer> rhythmTree = new TreeMap<String, Integer>();
+        /*
         //fetch pitch tree (if exists)
         File pitchTreeStorage = new File(name+" Pitch Tree.txt");
     	try{
@@ -48,6 +50,7 @@ public class GeneralReader implements JMC {
 			}
     	}
     	catch(FileNotFoundException e){}
+    	*/
 
     	//fetch rhythm tree (if exists)
         File rhythmTreeStorage = new File(name+" Rhythm Tree.txt");
@@ -60,16 +63,19 @@ public class GeneralReader implements JMC {
 				while(fileScanner.hasNext()){
 					input=fileScanner.nextLine();
 					stringParser = new Scanner(input);
-					double key = 0.0;
+					String key = new String();
 					int value = 0;
 					int numberOfNumbers = 0;
 					while(stringParser.hasNext()){
-						double temp = Double.parseDouble(stringParser.next());
+						String temp = stringParser.next();
 						if(numberOfNumbers == 0){
 							key = temp;
 						}
 						else if(numberOfNumbers == 1){
-							value = (int)temp;
+							key = key+" "+temp;
+						}
+						else if(numberOfNumbers == 2){
+							value = Integer.parseInt(temp);
 						}
 						numberOfNumbers++;
 					}
@@ -81,6 +87,41 @@ public class GeneralReader implements JMC {
     	}
     	catch(FileNotFoundException e){}
 
+    	//fetch pitch by key tree (if exists)
+        File pitchByKeyTreeStorage = new File(name+" Pitch By Key Tree.txt");
+    	try{
+    		if(pitchByKeyTreeStorage.exists()){
+				Scanner fileScanner = new Scanner(pitchByKeyTreeStorage);
+				String input=fileScanner.nextLine();
+				Scanner stringParser = new Scanner(input);
+				pitchTotal = stringParser.nextInt();
+				while(fileScanner.hasNext()){
+					input=fileScanner.nextLine();
+					stringParser = new Scanner(input);
+					String key = new String();
+					int value = 0;
+					int numberOfNumbers = 0;
+					while(stringParser.hasNext()){
+						String temp = stringParser.next();
+						if(numberOfNumbers == 0){
+							key = temp;
+						}
+						else if(numberOfNumbers == 1){
+							key = key+" "+temp;
+						}
+						else if(numberOfNumbers == 2){
+							value = Integer.parseInt(temp);
+						}
+						numberOfNumbers++;
+					}
+					pitchByKeyTree.put(key,value);
+					stringParser.close();
+				}
+				fileScanner.close();
+    		}
+    	}
+    	catch(FileNotFoundException e){}
+
     	//set up midi reading
     	Score song = new Score();
         Read.midi(song, songPath);
@@ -89,11 +130,13 @@ public class GeneralReader implements JMC {
         for(int i = 0; i < song.getSize(); i++){
         	songPhrases[i] = songParts[i].getPhraseArray();
         	for(int j=0; j<songParts[i].getSize(); j++){
+        		/*
         		//build on pitch interval tree from song phrase
         		int[] pitchintervals = PhraseAnalysis.pitchIntervals(songPhrases[i][j]);
         		if(pitchintervals.length!=0){
         			pitchTotal+=pitchintervals.length;
         			for(int n=0; n<pitchintervals.length; n++){
+        				//if not a rest
         				if(pitchintervals[n]<(Note.MAX_PITCH - Note.MIN_PITCH)){
 	        				if(pitchTree.get(pitchintervals[n]) == null){
 	        					pitchTree.put(pitchintervals[n], 1);
@@ -108,20 +151,106 @@ public class GeneralReader implements JMC {
         		else{
         			//do nothing
         		}
+        		*/
+        		//build on pitch by key tree from song phrase
+        		int[] pitches = songPhrases[i][j].getPitchArray();
+        		if(pitches.length>1){
+        			pitchTotal+=pitches.length;
+        			for(int n=0; n<pitches.length-1; n++){
+        				//if not a rest
+        				if(pitches[n]<=Note.MAX_PITCH && pitches[n]>=Note.MIN_PITCH){
+        					int nextPitch = 0;
+        					boolean found = false;
+        					int scan = n+1;
+        					while(!found&&scan<pitches.length){
+        						if(pitches[scan]<=Note.MAX_PITCH && pitches[scan]>=Note.MIN_PITCH){
+        							found = true;
+        							nextPitch = pitches[scan];
+        						}
+        						else scan++;
+        					}
+        					if(found){
+        						//set up key signature information
+        						int keysig = 0;
+        		        		int[] scale = MAJOR_SCALE;
+        		        		int sharpsflats = song.getKeySignature();
+        		        		if(sharpsflats<0){
+        		        			if(sharpsflats==-1) keysig=5;
+        		        			else if(sharpsflats==-2) keysig=10;
+        		        			else if(sharpsflats==-3) keysig=3;
+        		        			else if(sharpsflats==-4) keysig=8;
+        		        			else if(sharpsflats==-5) keysig=1;
+        		        			else if(sharpsflats==-6) keysig=6;
+        		        			else if(sharpsflats==-7) keysig=11;
+        		        		}
+        		        		else if(sharpsflats>0){
+        		        			if(sharpsflats==1) keysig=7;
+        		        			else if(sharpsflats==2) keysig=2;
+        		        			else if(sharpsflats==3) keysig=9;
+        		        			else if(sharpsflats==4) keysig=4;
+        		        			else if(sharpsflats==5) keysig=11;
+        		        			else if(sharpsflats==6) keysig=6;
+        		        			else if(sharpsflats==7) keysig=1;
+        		        		}
+        		        		if(song.getKeyQuality()==1) scale=MINOR_SCALE;
+        		        		int degree1 = PhraseAnalysis.pitchToDegree(keysig, pitches[n]);
+        		        		int degree2 = PhraseAnalysis.pitchToDegree(keysig, nextPitch);
+        		        		String key = Integer.toString(degree1)+" "+Integer.toString(degree2);
+		        				if(pitchByKeyTree.get(key) == null){
+		        					pitchByKeyTree.put(key, 1);
+		        				}
+		        				else{
+		        					int count = pitchByKeyTree.get(key);
+		        					pitchByKeyTree.put(key, count+1);
+		        				}
+        		        		/*
+        		        		//scale pitches down into an octave range from the key signature pitch
+        		        		int pitch1 = pitches[n];
+        		        		int pitch2 = nextPitch;
+        		        		while(pitch1>(keysig+12)){
+        		        			pitch1 = pitch1 - 12;
+        		        		}
+        		        		while(pitch2>(keysig+12)){
+        		        			pitch2 = pitch2 - 12;
+        		        		}
+
+        		        		while
+        		        		*/
+        					}
+        				}
+        			}
+        		}
+
         		//build on rhythm tree from song phrase
         		double[] rhythmArray = songPhrases[i][j].getRhythmArray();
         		Note[] notes = songPhrases[i][j].getNoteArray();
-        		if(rhythmArray.length!=0){
+        		if(rhythmArray.length>1){
         			rhythmTotal+=rhythmArray.length;
-        			for(int n=0; n<rhythmArray.length; n++){
+        			for(int n=0; n<rhythmArray.length-1; n++){
+        				//not a rest
         				if(notes[n].getPitch()>=Note.MIN_PITCH){
-	        				if(rhythmTree.get(rhythmArray[n]) == null){
-	        					rhythmTree.put(rhythmArray[n], 1);
-	        				}
-	        				else{
-	        					int rhythmCount = rhythmTree.get(rhythmArray[n]);
-	        					rhythmTree.put(rhythmArray[n], rhythmCount+1);
-	        				}
+        					Note nextNote = new Note();
+        					boolean found = false;
+        					int scan = n+1;
+        					while(!found&&scan<rhythmArray.length){
+        						if(notes[scan].getPitch()>=Note.MIN_PITCH){
+        							found = true;
+        							nextNote = notes[scan];
+        						}
+        						else scan++;
+        					}
+        					if(found){
+        						double rhythm1 = Math.round(rhythmArray[n]*100.0)/100.0;
+        						double rhythm2 = Math.round(nextNote.getRhythmValue()*100.0)/100.0;
+        						String key = Double.toString(rhythm1)+" "+Double.toString(rhythm2);
+		        				if(rhythmTree.get(key) == null){
+		        					rhythmTree.put(key, 1);
+		        				}
+		        				else{
+		        					int rhythmCount = rhythmTree.get(key);
+		        					rhythmTree.put(key, rhythmCount+1);
+		        				}
+        					}
         				}
         			}
         		}
@@ -132,35 +261,49 @@ public class GeneralReader implements JMC {
 
         }
 
+        /*
         //trunkate and round trees, correcting pitch total
-        pitchTree = pitchRangeTrunkate(pitchTree,'b');
+        pitchTree = pitchRangeTrunkate(pitchTree);
         rhythmTree = rhythmRound(rhythmTree);
+        */
 
         try{
-	        BufferedWriter pitchWriter = new BufferedWriter(new FileWriter(pitchTreeStorage,false));
+	        //BufferedWriter pitchWriter = new BufferedWriter(new FileWriter(pitchTreeStorage,false));
+        	BufferedWriter pitchByKeyWriter = new BufferedWriter(new FileWriter(pitchByKeyTreeStorage,false));
 	        BufferedWriter rhythmWriter = new BufferedWriter(new FileWriter(rhythmTreeStorage,false));
-	        File pitchPercentStorage = new File(pitchTreeStorage + " Percents.txt");
-	        File rhythmPercentStorage = new File(rhythmTreeStorage + " Percents.txt");
-	        BufferedWriter pitchPercentWriter = new BufferedWriter(new FileWriter(pitchPercentStorage,false));
+	        File pitchPercentStorage = new File(name + " Pitch Percents.txt");
+	        File rhythmPercentStorage = new File(name + " Rhythm Percents.txt");
+	        //BufferedWriter pitchPercentWriter = new BufferedWriter(new FileWriter(pitchPercentStorage,false));
+	        BufferedWriter pitchByKeyPercentWriter = new BufferedWriter(new FileWriter(pitchPercentStorage,false));
 	        BufferedWriter rhythmPercentWriter = new BufferedWriter(new FileWriter(rhythmPercentStorage,false));
 
-	        Iterator<Integer> pitchIterator = pitchTree.keySet().iterator();
-	        Iterator<Double> rhythmIterator = rhythmTree.keySet().iterator();
+	        //Iterator<Integer> pitchIterator = pitchTree.keySet().iterator();
+	        Iterator<String> pitchByKeyIterator = pitchByKeyTree.keySet().iterator();
+	        Iterator<String> rhythmIterator = rhythmTree.keySet().iterator();
+	        /*
 	        pitchWriter.write(pitchTotal + "\n");
 	        while(pitchIterator.hasNext()){
 	        	int cur = pitchIterator.next();
 	        	pitchWriter.write(cur + " " + pitchTree.get(cur) + "\n");
 	        	pitchPercentWriter.write(cur + " " + (((double)pitchTree.get(cur)/(double)pitchTotal)*100) + "\n");
 	        }
+	        */
+
+	        pitchByKeyWriter.write(pitchTotal + "\n");
+	        while(pitchByKeyIterator.hasNext()){
+	        	String cur = pitchByKeyIterator.next();
+	        	pitchByKeyWriter.write(cur + " " + pitchByKeyTree.get(cur) + "\n");
+	        	pitchByKeyPercentWriter.write(cur + " " + (((double)pitchByKeyTree.get(cur)/(double)pitchTotal)*100.0) + "\n");
+	        }
 
 	        rhythmWriter.write(rhythmTotal + "\n");
 	        while(rhythmIterator.hasNext()){
-	        	double cur = rhythmIterator.next();
+	        	String cur = rhythmIterator.next();
 	        	rhythmWriter.write(cur + " " + rhythmTree.get(cur) + "\n");
-	        	rhythmPercentWriter.write(cur + " " + (((double)rhythmTree.get(cur)/(double)rhythmTotal)*100) + "\n");
+	        	rhythmPercentWriter.write(cur + " " + (((double)rhythmTree.get(cur)/(double)rhythmTotal)*100.0) + "\n");
 	        }
-	        pitchWriter.close();
-	        pitchPercentWriter.close();
+	        pitchByKeyWriter.close();
+	        pitchByKeyPercentWriter.close();
 	        rhythmWriter.close();
 	        rhythmPercentWriter.close();
         }
@@ -168,7 +311,7 @@ public class GeneralReader implements JMC {
 	}
 
 
-	public static TreeMap<Integer,Integer> pitchRangeTrunkate(TreeMap<Integer,Integer> pitchTreeIn, char switcher){
+	public static TreeMap<Integer,Integer> pitchRangeTrunkate(TreeMap<Integer,Integer> pitchTreeIn){
     	TreeMap<Integer,Integer> pitchTreeOut = new TreeMap<Integer,Integer>();
     	Iterator<Integer> pitchIterator = pitchTreeIn.keySet().iterator();
     	while(pitchIterator.hasNext()){
@@ -176,16 +319,14 @@ public class GeneralReader implements JMC {
     		if(-24<=key && key<=24){
     			pitchTreeOut.put(key, pitchTreeIn.get(key));
     		}
-    		else if(switcher=='b'){
-    			Reader.bPitchTotal = Reader.bPitchTotal-pitchTreeIn.get(key);
-    		}
-    		else if(switcher=='c'){
-    			Reader.cPitchTotal = Reader.cPitchTotal-pitchTreeIn.get(key);
+    		else{
+    			//pitchTotal = pitchTotal-pitchTreeIn.get(key);
     		}
     	}
     	return pitchTreeOut;
     }
 
+	/*
     public static TreeMap<Double,Integer> rhythmRound(TreeMap<Double,Integer> rhythmTreeIn){
     	TreeMap<Double,Integer> rhythmTreeOut = new TreeMap<Double,Integer>();
     	Iterator<Double> rhythmIterator = rhythmTreeIn.keySet().iterator();
@@ -198,6 +339,7 @@ public class GeneralReader implements JMC {
     	}
     	return rhythmTreeOut;
     }
+    */
 
 
 	/**
