@@ -35,43 +35,33 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
-<part id="6"/>
-<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SinglePhraseSelector.java" partName="SinglePhraseSelector.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/SinglePhraseSelector.java" title="SinglePhraseSelector.java" tooltip="Unigram Analysis/src/jmusicpackage/SinglePhraseSelector.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/SinglePhraseSelector.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1879"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SinglePhraseSelectorBigram.java" partName="SinglePhraseSelectorBigram.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/SinglePhraseSelectorBigram.java" title="SinglePhraseSelectorBigram.java" tooltip="Unigram Analysis/src/jmusicpackage/SinglePhraseSelectorBigram.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/SinglePhraseSelectorBigram.java"/>
+<editorState selectionHPixel="1" selectionLength="0" selectionOffset="3656"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Reader.java" partName="Reader.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/Reader.java" title="Reader.java" tooltip="Unigram Analysis/src/jmusicpackage/Reader.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/Reader.java"/>
-<editorState selectionHPixel="0" selectionLength="1318" selectionOffset="16548"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="10417"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Analizer.java" partName="Analizer.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/Analizer.java" title="Analizer.java" tooltip="Unigram Analysis/src/jmusicpackage/Analizer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/Analizer.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="378"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MusicGeneration.java" partName="MusicGeneration.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/MusicGeneration.java" title="MusicGeneration.java" tooltip="Unigram Analysis/src/jmusicpackage/MusicGeneration.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/MusicGeneration.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="673"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnalizerBigram.java" partName="AnalizerBigram.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/AnalizerBigram.java" title="AnalizerBigram.java" tooltip="Unigram Analysis/src/jmusicpackage/AnalizerBigram.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/AnalizerBigram.java"/>
+<editorState selectionHPixel="72" selectionLength="140" selectionOffset="6169"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UI.java" partName="UI.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/UI.java" title="UI.java" tooltip="Unigram Analysis/src/jmusicpackage/UI.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/UI.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="709"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1952"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WholeSongAnalysis.java" partName="WholeSongAnalysis.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java" title="WholeSongAnalysis.java" tooltip="Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="714"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WholeSongAnalysisBigram.java" partName="WholeSongAnalysisBigram.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/WholeSongAnalysisBigram.java" title="WholeSongAnalysisBigram.java" tooltip="Unigram Analysis/src/jmusicpackage/WholeSongAnalysisBigram.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/WholeSongAnalysisBigram.java"/>
+<editorState selectionHPixel="0" selectionLength="53" selectionOffset="794"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/Test.java" title="Test.java" tooltip="Unigram Analysis/src/jmusicpackage/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/Test.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1707"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeneralReader.java" partName="GeneralReader.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/GeneralReader.java" title="GeneralReader.java" tooltip="Unigram Analysis/src/jmusicpackage/GeneralReader.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeneralReader.java" partName="GeneralReader.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Unigram Analysis/src/jmusicpackage/GeneralReader.java" title="GeneralReader.java" tooltip="Unigram Analysis/src/jmusicpackage/GeneralReader.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Unigram Analysis/src/jmusicpackage/GeneralReader.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="4264"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="5000"/>
 </editor>
 </editors>
 <views>
@@ -400,48 +390,64 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7496706" ratioLeft="569" ratioRight="190" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7496706" ratioLeft="569" ratioRight="190" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44991213" ratioLeft="256" ratioRight="313" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1074" ratioRight="358" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.DisassemblyView" label="LabelNotFound"/>
 <page content="org.eclipse.ve.internal.java.codegen.editorpart.BeansList" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="716" ratioRight="716" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="716" ratioRight="716" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.ModulesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -453,158 +459,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/Reader.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/GeneralReader.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/UI.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/SinglePhraseSelectorBigram.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/AnalizerBigram.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Unigram Analysis/src/jmusicpackage/WholeSongAnalysisBigram.java"/>
 </editors>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="198" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4586" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="254" y="58"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4645" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="198" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4841" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="6017" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4895" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="254" y="58"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4534" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="245" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4586" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="670" y="149"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4645" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="4413" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4841" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="991" y="1538"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4895" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="673" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4534" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="2529" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4586" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="673" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4645" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="815" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4841" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="4413" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4895" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="2541" y="67"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4534" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="2443" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4586" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="2541" y="67"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4645" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="2443" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4841" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="2666" y="39"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4895" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="4413" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4534" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="2715" y="54"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4586" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="2519" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4645" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="2779" y="153"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4841" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="2623" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4895" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="7264" y="853"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4534" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="2623" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4586" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3041" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4645" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="4223" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="4841" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="8129" y="816"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="3360" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="4223" y="0"/>
+<item historyLabel="SinglePhraseSelectorBigram.java" index="1">
+<position info="not_deleted" x="5072" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3606" y="0"/>
+<item historyLabel="Test.java" index="3">
+<position info="not_deleted" x="1707" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3629" y="0"/>
+<item historyLabel="SinglePhraseSelectorBigram.java" index="1">
+<position info="not_deleted" x="5072" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3632" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="3360" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3647" y="0"/>
+<item historyLabel="WholeSongAnalysisBigram.java" index="4">
+<position info="not_deleted" x="720" y="72"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3837" y="0"/>
+<item historyLabel="UI.java" index="0">
+<position info="not_deleted" x="1677" y="54"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3823" y="0"/>
+<item historyLabel="WholeSongAnalysisBigram.java" index="4">
+<position info="not_deleted" x="794" y="53"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3495" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="7474" y="10"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="13327" y="1647"/>
+<item historyLabel="UI.java" index="0">
+<position info="not_deleted" x="1677" y="54"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="3495" y="0"/>
+<item historyLabel="WholeSongAnalysisBigram.java" index="4">
+<position info="not_deleted" x="794" y="53"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="6017" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="7474" y="10"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="16387" y="59"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="6923" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="6017" y="0"/>
+<item historyLabel="UI.java" index="0">
+<position info="not_deleted" x="1748" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="16486" y="11"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="6169" y="140"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="6017" y="0"/>
+<item historyLabel="UI.java" index="0">
+<position info="not_deleted" x="1729" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="16497" y="32"/>
+<item historyLabel="SinglePhraseSelectorBigram.java" index="1">
+<position info="not_deleted" x="6342" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="6017" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="6169" y="140"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="12987" y="153"/>
+<item historyLabel="SinglePhraseSelectorBigram.java" index="1">
+<position info="not_deleted" x="3656" y="0"/>
 </item>
-<item historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="4260" y="0"/>
+<item historyLabel="UI.java" index="0">
+<position info="not_deleted" x="1952" y="0"/>
 </item>
-<item historyLabel="Reader.java" index="0">
-<position info="not_deleted" x="16548" y="1318"/>
+<item historyLabel="AnalizerBigram.java" index="2">
+<position info="not_deleted" x="6169" y="140"/>
 </item>
-<item active="true" historyLabel="GeneralReader.java" index="1">
-<position info="not_deleted" x="4260" y="0"/>
+<item active="true" historyLabel="SinglePhraseSelectorBigram.java" index="1">
+<position info="not_deleted" x="3656" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -623,14 +632,17 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeneralReader.java" tooltip="Unigram Analysis/src/jmusicpackage/GeneralReader.java">
-<persistable path="/Unigram Analysis/src/jmusicpackage/GeneralReader.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WholeSongAnalysis.java" tooltip="Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java">
+<persistable path="/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="Unigram Analysis/src/jmusicpackage/Test.java">
 <persistable path="/Unigram Analysis/src/jmusicpackage/Test.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WholeSongAnalysis.java" tooltip="Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java">
-<persistable path="/Unigram Analysis/src/jmusicpackage/WholeSongAnalysis.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeneralReaderUnigram.java" tooltip="Unigram Analysis/src/jmusicpackage/GeneralReaderUnigram.java">
+<persistable path="/Unigram Analysis/src/jmusicpackage/GeneralReaderUnigram.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeneralReader.java" tooltip="Unigram Analysis/src/jmusicpackage/GeneralReader.java">
+<persistable path="/Unigram Analysis/src/jmusicpackage/GeneralReader.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UI.java" tooltip="Unigram Analysis/src/jmusicpackage/UI.java">
 <persistable path="/Unigram Analysis/src/jmusicpackage/UI.java"/>
