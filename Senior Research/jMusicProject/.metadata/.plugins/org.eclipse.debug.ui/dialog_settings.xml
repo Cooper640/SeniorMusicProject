@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
-		<item key="DIALOG_X_ORIGIN" value="333"/>
-		<item key="DIALOG_HEIGHT" value="476"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-		<item key="DIALOG_Y_ORIGIN" value="67"/>
-		<item key="DIALOG_WIDTH" value="359"/>
-	</section>
+	<item key="org.eclipse.debug.ui.InspectPopupDialogDIALOG_HEIGHT" value="200"/>
+	<item key="org.eclipse.debug.ui.InspectPopupDialogDIALOG_WIDTH" value="254"/>
+	<item key="org.eclipse.debug.ui.InspectPopupDialogDIALOG_Y_ORIGIN" value="589"/>
+	<item key="org.eclipse.debug.ui.InspectPopupDialogDIALOG_X_ORIGIN" value="45"/>
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_CONFIGURATION_DIALOG">
 		<item key="DIALOG_X_ORIGIN" value="503"/>
-		<item key="DIALOG_HEIGHT" value="450"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="450"/>
 		<item key="DIALOG_Y_ORIGIN" value="138"/>
 		<item key="DIALOG_WIDTH" value="450"/>
 	</section>
+	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
+		<item key="DIALOG_X_ORIGIN" value="333"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="476"/>
+		<item key="DIALOG_Y_ORIGIN" value="67"/>
+		<item key="DIALOG_WIDTH" value="359"/>
+	</section>
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
 		<item key="DIALOG_X_ORIGIN" value="287"/>
-		<item key="DIALOG_HEIGHT" value="450"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="450"/>
 		<item key="DIALOG_Y_ORIGIN" value="84"/>
 		<item key="DIALOG_WIDTH" value="450"/>
 	</section>
