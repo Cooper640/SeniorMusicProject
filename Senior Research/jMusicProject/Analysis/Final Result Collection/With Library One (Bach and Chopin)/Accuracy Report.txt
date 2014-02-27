@@ -1,9 +1,16 @@
-Songs Run: 3
-Correctly Identified as Bach: 1/1
-Correctly Identified as Chopin: 1/2
+Songs Run: 11
+Correctly Identified as Bach: 5/6
+Correctly Identified as Chopin: 3/5
 
+Overall hit rate: 8/11
 
 For Incorrect Results:
-Total Songs Incorrect: 1
-Times Pitch Was Incorrect: 0/1
-Times Rhythm Was Incorrect: 1/1
+Total Songs Incorrect: 3
+Times Pitch Was Incorrect: 1/3
+Times Rhythm Was Incorrect: 3/3
+Times Bother Were: 1/3
+
+For Correct Results:
+Total Songs Correct: 8
+Times Pitch Was Incorrect: 1/8
+Times Rhythm Was Incorrect: 2/8

@@ -6,8 +6,11 @@ import java.util.*;
 
 public class AnalizerBigram{
 
-	static File libraryPercentStorage = new File("Test Bigram 1 Results/percents.txt");
+	static File libraryPercentStorage = new File("Test Bigram 1 Results/BvCpercents.txt");
+	//was only used in testing, now being set by calls to analyze method
 	static File songPhraseTreeStorage = new File("Test 3 Results/100 length left hand/Random Song Trees.txt");
+	static String ARTIST1 = "Bach";
+	static String ARTIST2 = "Chopin";
 
 
     static BigDecimal large = new BigDecimal(0);
@@ -17,17 +20,17 @@ public class AnalizerBigram{
     static TreeMap<String, Integer> songPhraseRhythmTree = new TreeMap<String, Integer>();
 
 	public static void main(String[] args) {
-		TreeMap<String, Double> bPercentPitchTree = new TreeMap<String, Double>();
-	    TreeMap<String, Double> bPercentRhythmTree = new TreeMap<String, Double>();
+		TreeMap<String, Double> a1PercentPitchTree = new TreeMap<String, Double>();
+	    TreeMap<String, Double> a1PercentRhythmTree = new TreeMap<String, Double>();
 
-	    TreeMap<String, Double> cPercentPitchTree = new TreeMap<String, Double>();
-	    TreeMap<String, Double> cPercentRhythmTree = new TreeMap<String, Double>();
+	    TreeMap<String, Double> a2PercentPitchTree = new TreeMap<String, Double>();
+	    TreeMap<String, Double> a2PercentRhythmTree = new TreeMap<String, Double>();
 
 		try{
 			if(libraryPercentStorage.exists()){
 				Scanner fileScanner = new Scanner(libraryPercentStorage);
-				boolean bach = false;
-				boolean chopin = false;
+				boolean artist1 = false;
+				boolean artist2 = false;
 				boolean pitch = false;
 				boolean rhythm = false;
 				while(fileScanner.hasNext()){
@@ -37,15 +40,15 @@ public class AnalizerBigram{
 					double value = 0.0;
 					String currentString = stringParser.next();
 					if(!stringParser.hasNext()){
-						if(currentString.equals("Bach")){
-							bach = true;
-							chopin = false;
+						if(currentString.equals(ARTIST1)){
+							artist1 = true;
+							artist2 = false;
 						}
-						else if(currentString.equals("Chopin")){
-							bach = false;
-							chopin = true;
+						else if(currentString.equals(ARTIST2)){
+							artist1 = false;
+							artist2 = true;
 						}
-						else if(currentString.equals("Pitches")){
+						else if(currentString.equals("Pitch")){
 							pitch = true;
 							rhythm = false;
 						}
@@ -61,17 +64,17 @@ public class AnalizerBigram{
 						currentString = stringParser.next();
 						double temp = Double.parseDouble(currentString);
 						value = temp;
-						if(bach && pitch){
-							bPercentPitchTree.put(key,value);
+						if(artist1 && pitch){
+							a1PercentPitchTree.put(key,value);
 						}
-						else if(bach && rhythm){
-							bPercentRhythmTree.put(key,value);
+						else if(artist1 && rhythm){
+							a1PercentRhythmTree.put(key,value);
 						}
-						else if(chopin && pitch){
-							cPercentPitchTree.put(key,value);
+						else if(artist2 && pitch){
+							a2PercentPitchTree.put(key,value);
 						}
-						else if(chopin && rhythm){
-							cPercentRhythmTree.put(key,value);
+						else if(artist2 && rhythm){
+							a2PercentRhythmTree.put(key,value);
 						}
 					}
 				}
@@ -125,39 +128,40 @@ public class AnalizerBigram{
     	catch(FileNotFoundException e){}
 		Iterator<String> songPhrasePitchIterator = songPhrasePitchTree.keySet().iterator();
         Iterator<String> songPhraseRhythmIterator = songPhraseRhythmTree.keySet().iterator();
-        double bachPitchLikelihood = Math.log10(0.5);
-        double chopinPitchLikelihood = Math.log10(0.5);
-        double bachRhythmLikelihood = Math.log10(0.5);
-        double chopinRhythmLikelihood = Math.log10(0.5);
+        double artist1PitchLikelihood = Math.log10(0.5);
+        double artist2PitchLikelihood = Math.log10(0.5);
+        double artist1RhythmLikelihood = Math.log10(0.5);
+        double artist2RhythmLikelihood = Math.log10(0.5);
         while(songPhrasePitchIterator.hasNext()){
         	String curKey = songPhrasePitchIterator.next();
-        	if(bPercentPitchTree.get(curKey) != null){
-        		bachPitchLikelihood = bachPitchLikelihood+(Math.log10(bPercentPitchTree.get(curKey))*songPhrasePitchTree.get(curKey));
+        	if(a1PercentPitchTree.get(curKey) != null){
+        		artist1PitchLikelihood = artist1PitchLikelihood+(Math.log10(a1PercentPitchTree.get(curKey))*songPhrasePitchTree.get(curKey));
         	}
-        	if(cPercentPitchTree.get(curKey) != null){
-        		chopinPitchLikelihood = chopinPitchLikelihood+(Math.log10(cPercentPitchTree.get(curKey))*songPhrasePitchTree.get(curKey));
+        	if(a2PercentPitchTree.get(curKey) != null){
+        		artist2PitchLikelihood = artist2PitchLikelihood+(Math.log10(a2PercentPitchTree.get(curKey))*songPhrasePitchTree.get(curKey));
         	}
         }
         while(songPhraseRhythmIterator.hasNext()){
         	String curKey = songPhraseRhythmIterator.next();
-        	if(bPercentRhythmTree.get(curKey) != null){
-        		bachRhythmLikelihood = bachRhythmLikelihood+(Math.log10(bPercentRhythmTree.get(curKey))*songPhraseRhythmTree.get(curKey));
+        	if(a1PercentRhythmTree.get(curKey) != null){
+        		artist1RhythmLikelihood = artist1RhythmLikelihood+(Math.log10(a1PercentRhythmTree.get(curKey))*songPhraseRhythmTree.get(curKey));
         	}
-        	if(cPercentRhythmTree.get(curKey) != null){
-        		chopinRhythmLikelihood = chopinRhythmLikelihood+(Math.log10(cPercentRhythmTree.get(curKey))*songPhraseRhythmTree.get(curKey));
+        	if(a2PercentRhythmTree.get(curKey) != null){
+        		artist2RhythmLikelihood = artist2RhythmLikelihood+(Math.log10(a2PercentRhythmTree.get(curKey))*songPhraseRhythmTree.get(curKey));
         	}
         }
         System.out.println("Pitch Likelyhood:");
-        System.out.println("Bach: " + bachPitchLikelihood);
-        System.out.println("Chopin: " + chopinPitchLikelihood);
-        System.out.println(bachPitchLikelihood/chopinPitchLikelihood);
+        System.out.println(ARTIST1+": " + artist1PitchLikelihood);
+        System.out.println(ARTIST2+": " + artist2PitchLikelihood);
+        System.out.println(artist1PitchLikelihood-artist2PitchLikelihood);
         System.out.println("Rhythm Likelyhood:");
-        System.out.println("Bach: " + bachRhythmLikelihood);
-        System.out.println("Chopin: " + chopinRhythmLikelihood);
-        System.out.println(bachRhythmLikelihood/chopinRhythmLikelihood);
+        System.out.println(ARTIST1+": " + artist1RhythmLikelihood);
+        System.out.println(ARTIST2+": " + artist2RhythmLikelihood);
+        System.out.println(artist1RhythmLikelihood-artist2RhythmLikelihood);
 
         File results = new File("results.txt");
         try{
+        	//this shouldn't be hit unless analyzing in chunks (or if forget to clear previous results)
         	if(results.exists()){
         		Scanner fileScanner = new Scanner(results);
         		double likelihood = Float.parseFloat(fileScanner.nextLine());
@@ -165,24 +169,32 @@ public class AnalizerBigram{
         		double rhythm = Float.parseFloat(fileScanner.nextLine());
         		fileScanner.close();
         		BufferedWriter writer = new BufferedWriter(new FileWriter(results,false));
-        		writer.write((likelihood*((bachPitchLikelihood/chopinPitchLikelihood)*(bachRhythmLikelihood/chopinRhythmLikelihood)))+"\n");
-        		//large = large.multiply(new BigDecimal((bachPitchLikelihood/chopinPitchLikelihood)*(bachRhythmLikelihood/chopinRhythmLikelihood)));
+        		writer.write((likelihood*((artist1PitchLikelihood/artist2PitchLikelihood)*(artist1RhythmLikelihood/artist2RhythmLikelihood)))+"\n");
+        		//large = large.multiply(new BigDecimal((artist1PitchLikelihood/artist2PitchLikelihood)*(artist1RhythmLikelihood/artist2RhythmLikelihood)));
         		//System.out.println(large.doubleValue());
         		System.out.println(likelihood);
-        		writer.write((pitch*(bachPitchLikelihood/chopinPitchLikelihood))+"\n");
-        		writer.write((rhythm*(bachRhythmLikelihood/chopinRhythmLikelihood))+"\n");
+        		writer.write((pitch*(artist1PitchLikelihood/artist2PitchLikelihood))+"\n");
+        		writer.write((rhythm*(artist1RhythmLikelihood/artist2RhythmLikelihood))+"\n");
         		writer.close();
         	}
+        	//So currently this one will always be used
     		else{
         		BufferedWriter writer = new BufferedWriter(new FileWriter(results,false));
+        		
+        		double likelihood = Math.pow(10,(artist1PitchLikelihood-artist2PitchLikelihood)+(artist1RhythmLikelihood-artist2RhythmLikelihood));
+        		double pitch = Math.pow(10,artist1PitchLikelihood-artist2PitchLikelihood);
+        		double rhythm = Math.pow(10,artist1RhythmLikelihood-artist2RhythmLikelihood);
         		//overall
-        		writer.write(Math.pow(10,(bachPitchLikelihood-chopinPitchLikelihood)+(bachRhythmLikelihood-chopinRhythmLikelihood))+"\n");
-    			//large = new BigDecimal(((bachPitchLikelihood/chopinPitchLikelihood)*(bachRhythmLikelihood/chopinRhythmLikelihood)));
-        		System.out.println(Math.pow(10,(bachPitchLikelihood-chopinPitchLikelihood)+(bachRhythmLikelihood-chopinRhythmLikelihood)));
+        		if(likelihood>1)writer.write("Overall: "+likelihood+" ("+ARTIST1+")\n");
+        		else writer.write("Overall: "+likelihood+" ("+ARTIST2+")\n");
+    			//large = new BigDecimal(((artist1PitchLikelihood/artist2PitchLikelihood)*(artist1RhythmLikelihood/artist2RhythmLikelihood)));
+        		System.out.println(likelihood);
     			//pitch
-        		writer.write(Math.pow(10,bachPitchLikelihood-chopinPitchLikelihood)+"\n");
+        		if(pitch>1)writer.write("Pitch: "+pitch+" ("+ARTIST1+")\n");
+        		else writer.write("Pitch: "+pitch+" ("+ARTIST2+")\n");
     			//rhythm
-        		writer.write(Math.pow(10,bachRhythmLikelihood-chopinRhythmLikelihood)+"\n");
+        		if(rhythm>1)writer.write("Rhythm: "+rhythm+" ("+ARTIST1+")\n");
+        		else writer.write("Rhythm: "+rhythm+" ("+ARTIST2+")\n");
     			writer.close();
     		}
         }

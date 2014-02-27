@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="891"/>
-		<item key="DIALOG_HEIGHT" value="380"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-		<item key="DIALOG_Y_ORIGIN" value="395"/>
-		<item key="DIALOG_WIDTH" value="263"/>
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="395" key="DIALOG_Y_ORIGIN"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="891" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="wholeword" value="false"/>
-		<item key="incremental" value="false"/>
-		<item key="isRegEx" value="false"/>
-		<item key="selection" value="log"/>
-		<item key="wrap" value="true"/>
-		<item key="casesensitive" value="false"/>
+		<item value="true" key="wrap"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wholeword"/>
+		<item value="artist2RhythmLikelihood" key="selection"/>
 		<list key="findhistory">
-			<item value="log"/>
-			<item value="length"/>
-			<item value="total"/>
-			<item value="weight"/>
-			<item value="weighted"/>
-			<item value="pitchByKeyTreeStorage"/>
-			<item value="pitchTotal"/>
-			<item value="File"/>
-		</list>
-		<list key="replacehistory">
-			<item value="chopinPitchLikelihood"/>
 			<item value="chopinRhythmLikelihood"/>
 			<item value="bachRhythmLikelihood"/>
+			<item value="chopinPitchLikelihood"/>
 			<item value="bachPitchLikelihood"/>
+			<item value="bPercentPitchTree"/>
+			<item value="bPercentRhythmTree"/>
+			<item value="cPercentPitchTree"/>
+			<item value="cPercentRhythmTree"/>
+		</list>
+		<list key="replacehistory">
+			<item value="artist2RhythmLikelihood"/>
+			<item value="artist1RhythmLikelihood"/>
+			<item value="artist2PitchLikelihood"/>
+			<item value="artist1PitchLikelihood"/>
+			<item value="a1PercentPitchTree"/>
+			<item value="a1PercentRhythmTree"/>
+			<item value="a2PercentPitchTree"/>
+			<item value="a2PercentRhythmTree"/>
 		</list>
 	</section>
 </section>
