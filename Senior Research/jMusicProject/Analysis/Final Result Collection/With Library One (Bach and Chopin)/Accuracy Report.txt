@@ -1,0 +1,9 @@
+Songs Run: 3
+Correctly Identified as Bach: 1/1
+Correctly Identified as Chopin: 1/2
+
+
+For Incorrect Results:
+Total Songs Incorrect: 1
+Times Pitch Was Incorrect: 0/1
+Times Rhythm Was Incorrect: 1/1

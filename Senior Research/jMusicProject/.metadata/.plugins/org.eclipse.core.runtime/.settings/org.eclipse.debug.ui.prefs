@@ -1,5 +1,6 @@
-#Mon Nov 18 05:12:47 CST 2013
+#Wed Feb 26 18:38:22 CST 2014
 pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684"/>
+org.eclipse.debug.uiinspectPopupSashWeights=900\:100
 eclipse.preferences.version=1
 preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
 preferredTargets=default\:default|

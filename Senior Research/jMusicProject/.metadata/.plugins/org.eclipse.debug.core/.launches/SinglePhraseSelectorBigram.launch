@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launchConfiguration type="org.eclipse.ve.java.core.launcher.JavaBean">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Analysis/src/jmusicpackage/SinglePhraseSelectorBigram.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="jmusicpackage.SinglePhraseSelectorBigram"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Unigram Analysis"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Analysis"/>
 </launchConfiguration>
