@@ -8,7 +8,7 @@ For Incorrect Results:
 Total Songs Incorrect: 3
 Times Pitch Was Incorrect: 1/3
 Times Rhythm Was Incorrect: 3/3
-Times Bother Were: 1/3
+Times Both Were: 1/3
 
 For Correct Results:
 Total Songs Correct: 8

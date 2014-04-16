@@ -10,10 +10,13 @@ import jm.util.*;
 
 public class GeneralReader implements JMC {
 
-	static int pitchTotal = 0;
-	static int rhythmTotal = 0;
+	//static int pitchTotal = 0;
+	//static int rhythmTotal = 0;
 
 	public static void read(String songPath, String name){
+
+		int pitchTotal = 0;
+		int rhythmTotal = 0;
 
 		//TreeMap<Integer, Integer> pitchTree = new TreeMap<Integer, Integer>();
 		TreeMap<String, Integer> pitchByKeyTree = new TreeMap<String, Integer>();
@@ -300,14 +303,15 @@ public class GeneralReader implements JMC {
 	        while(pitchByKeyIterator.hasNext()){
 	        	String cur = pitchByKeyIterator.next();
 	        	pitchByKeyWriter.write(cur + " " + pitchByKeyTree.get(cur) + "\n");
-	        	pitchByKeyPercentWriter.write(cur + " " + (((double)pitchByKeyTree.get(cur)/(double)pitchTotal)*100.0) + "\n");
+	        	//removing the * 100 to correct percents to total to about 1 for the whole list and range from 0 to 1 individually
+	        	pitchByKeyPercentWriter.write(cur + " " + ((double)pitchByKeyTree.get(cur)/(double)pitchTotal) + "\n");
 	        }
 
 	        rhythmWriter.write(rhythmTotal + "\n");
 	        while(rhythmIterator.hasNext()){
 	        	String cur = rhythmIterator.next();
 	        	rhythmWriter.write(cur + " " + rhythmTree.get(cur) + "\n");
-	        	rhythmPercentWriter.write(cur + " " + (((double)rhythmTree.get(cur)/(double)rhythmTotal)*100.0) + "\n");
+	        	rhythmPercentWriter.write(cur + " " + ((double)rhythmTree.get(cur)/(double)rhythmTotal) + "\n");
 	        }
 	        pitchByKeyWriter.close();
 	        pitchByKeyPercentWriter.close();

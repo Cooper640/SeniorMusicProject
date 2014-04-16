@@ -1,0 +1,13 @@
+Songs\Bach Test Songs\vs1-1ada.mid: Bach
+Songs\Bach Test Songs\vs1-2fug.mid: Bach
+Songs\Bach Test Songs\vs1-3sic.mid: Bach
+Songs\Bach Test Songs\vs1-4prs.mid: Bach
+Songs\Bach Test Songs\vs2-1gra.mid: Bach
+Songs\Bach Test Songs\vs2-2fug.mid: Bach
+Songs\Bach Test Songs\vs2-3and.mid: Bach
+Songs\Bach Test Songs\vs2-4alg.mid: Bach
+Songs\Bach Test Songs\vs3-1ada.mid: Bach
+Songs\Bach Test Songs\vs3-2fug.mid: Bach
+Songs\Bach Test Songs\vs3-3lar.mid: Bach
+Songs\Bach Test Songs\vs3-4alg.mid: Bach
+Hit/Miss rate: 12/12

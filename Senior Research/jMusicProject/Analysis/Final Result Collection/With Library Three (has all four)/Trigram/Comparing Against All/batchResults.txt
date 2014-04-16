@@ -1,0 +1,44 @@
+Songs\Bach Test Songs\988-v05.mid: Bach
+Songs\Bach Test Songs\bwv1062.mid: Bach
+Songs\Bach Test Songs\bwv1069BOURREE.mid: Byrd
+Songs\Bach Test Songs\bwv529-3.mid: Byrd
+Songs\Bach Test Songs\bwv806g.mid: Byrd
+Songs\Bach Test Songs\bwv809e.mid: Mozart
+Songs\Bach Test Songs\cs4-1pre.mid: Bach
+Songs\Bach Test Songs\fp-4bou.mid: Bach
+Songs\Bach Test Songs\sonat_5d.mid: Bach
+Songs\Bach Test Songs\vs2-2fug.mid: Bach
+Hit/Miss rate: 6/10
+Songs\Chopin Test Songs\ch-ps3-3.mid: Byrd
+Songs\Chopin Test Songs\chmz0603.mid: Chopin
+Songs\Chopin Test Songs\Chopin_Etude_Op10-4.mid: Bach
+Songs\Chopin Test Songs\chopso2c.mid: Mozart
+Songs\Chopin Test Songs\chpn-p11.mid: Bach
+Songs\Chopin Test Songs\chpn-p4.mid: Mozart
+Songs\Chopin Test Songs\chpn_op25_e3.mid: Bach
+Songs\Chopin Test Songs\fant-imp.mid: Byrd
+Songs\Chopin Test Songs\op40no01.mid: Byrd
+Songs\Chopin Test Songs\prelud20.mid: Chopin
+Hit/Miss rate: 2/10
+Songs\Mozart Test Songs\gp_k136a.mid: Mozart
+Songs\Mozart Test Songs\mozbasn1_k191.mid: Mozart
+Songs\Mozart Test Songs\mozk299b.mid: Byrd
+Songs\Mozart Test Songs\mozk313c.mid: Chopin
+Songs\Mozart Test Songs\mozk466b.mid: Chopin
+Songs\Mozart Test Songs\mozk503b.mid: Byrd
+Songs\Mozart Test Songs\mozk525c.mid: Mozart
+Songs\Mozart Test Songs\mozk622c.mid: Chopin
+Songs\Mozart Test Songs\moz_k191.mid: Mozart
+Songs\Mozart Test Songs\mz477.mid: Mozart
+Hit/Miss rate: 5/10
+Songs\Byrd Test Songs\byrd03.mid: Bach
+Songs\Byrd Test Songs\byrd16.mid: Mozart
+Songs\Byrd Test Songs\byrd31.mid: Chopin
+Songs\Byrd Test Songs\byrd38.mid: Mozart
+Songs\Byrd Test Songs\byrd45.mid: Chopin
+Songs\Byrd Test Songs\byrd56.mid: Chopin
+Songs\Byrd Test Songs\byrd62.mid: Mozart
+Songs\Byrd Test Songs\byrd78.mid: Mozart
+Songs\Byrd Test Songs\byrd87.mid: Mozart
+Songs\Byrd Test Songs\Mass for four voices 3 Credo.mid: Byrd
+Hit/Miss rate: 1/10

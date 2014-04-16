@@ -1,0 +1,22 @@
+Songs\Bach Test Songs\988-v05.mid: Bach
+Songs\Bach Test Songs\bwv1062.mid: Bach
+Songs\Bach Test Songs\bwv1069BOURREE.mid: Byrd
+Songs\Bach Test Songs\bwv529-3.mid: Byrd
+Songs\Bach Test Songs\bwv806g.mid: Byrd
+Songs\Bach Test Songs\bwv809e.mid: Bach
+Songs\Bach Test Songs\cs4-1pre.mid: Bach
+Songs\Bach Test Songs\fp-4bou.mid: Bach
+Songs\Bach Test Songs\sonat_5d.mid: Bach
+Songs\Bach Test Songs\vs2-2fug.mid: Bach
+Hit/Miss rate: 7/10
+Songs\Byrd Test Songs\byrd03.mid: Bach
+Songs\Byrd Test Songs\byrd16.mid: Bach
+Songs\Byrd Test Songs\byrd31.mid: Bach
+Songs\Byrd Test Songs\byrd38.mid: Bach
+Songs\Byrd Test Songs\byrd45.mid: Bach
+Songs\Byrd Test Songs\byrd56.mid: Bach
+Songs\Byrd Test Songs\byrd62.mid: Bach
+Songs\Byrd Test Songs\byrd78.mid: Bach
+Songs\Byrd Test Songs\byrd87.mid: Bach
+Songs\Byrd Test Songs\Mass for four voices 3 Credo.mid: Byrd
+Hit/Miss rate: 1/10

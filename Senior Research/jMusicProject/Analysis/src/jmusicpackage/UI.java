@@ -17,12 +17,12 @@ public class UI {
 	        "Midi files", "mid");
 	    chooser.setFileFilter(filter);
 
-		System.out.println("Enter operation (r/s/w): ");
+		System.out.println("Enter operation (gr/w/b): ");
 
 		Scanner scanIn = new Scanner(System.in);
 		String input = scanIn.nextLine();
 		input = input.toLowerCase();
-
+		//old read method, use gr now
 	    if(input.equals("r")){
 	    	File bpath = new File("Songs/Bach");
 	    	File [] bfiles = bpath.listFiles();
@@ -35,6 +35,7 @@ public class UI {
 	            }
 	        }
 	    }
+	    //really old, use b or w
 	    else if(input.equals("s")){
 		    int returnVal = chooser.showOpenDialog(null);
 		    if(returnVal == JFileChooser.APPROVE_OPTION) {
@@ -42,6 +43,7 @@ public class UI {
 		       SinglePhraseSelector.read(filePath, 100, 1, 0, 0);
 		    }
 	    }
+	    //use for single song, use b for a folder of songs
 	    else if(input.equals("w")){
 		    int returnVal = chooser.showOpenDialog(null);
 		    if(returnVal == JFileChooser.APPROVE_OPTION) {
@@ -59,6 +61,24 @@ public class UI {
 	    	for (int i = 0; i < files.length; i++){
 	            if (files[i].isFile()){
 	            	GeneralReader.read(files[i].getPath(),input);
+	            }
+	    	}
+	    }
+	    else if(input.equals("b")){
+	    	System.out.println("Enter Composer Name: ");
+	    	input = scanIn.nextLine();
+	    	File path = new File("Songs/"+input+" Test Songs");
+	    	File[] files = path.listFiles();
+	    	BatchTester.test(files, input);
+	    }
+	    else if(input.equals("grt")){
+	    	System.out.println("Enter Composer Name: ");
+			input = scanIn.nextLine();
+	    	File path = new File("Songs/"+input);
+	    	File [] files = path.listFiles();
+	    	for (int i = 0; i < files.length; i++){
+	            if (files[i].isFile()){
+	            	GeneralReaderTrigram.read(files[i].getPath(),input);
 	            }
 	    	}
 	    }
