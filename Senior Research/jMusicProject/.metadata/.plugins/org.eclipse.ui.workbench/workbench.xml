@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="429" y="-15">
 <fastViewData fastViewLocation="1024">
@@ -36,6 +36,8 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
@@ -46,23 +48,31 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeneralReader.java" partName="GeneralReader.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Analysis/src/jmusicpackage/GeneralReader.java" title="GeneralReader.java" tooltip="Analysis/src/jmusicpackage/GeneralReader.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Analysis/src/jmusicpackage/GeneralReader.java"/>
-<editorState selectionHPixel="0" selectionLength="34" selectionOffset="3650"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="232"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UI.java" partName="UI.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Analysis/src/jmusicpackage/UI.java" title="UI.java" tooltip="Analysis/src/jmusicpackage/UI.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Analysis/src/jmusicpackage/UI.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="2609"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="2220"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WholeSongAnalysisBigram.java" partName="WholeSongAnalysisBigram.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Analysis/src/jmusicpackage/WholeSongAnalysisBigram.java" title="WholeSongAnalysisBigram.java" tooltip="Analysis/src/jmusicpackage/WholeSongAnalysisBigram.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Analysis/src/jmusicpackage/WholeSongAnalysisBigram.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1105"/>
+<editorState selectionHPixel="0" selectionLength="13" selectionOffset="1920"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnalizerBigram.java" partName="AnalizerBigram.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Analysis/src/jmusicpackage/AnalizerBigram.java" title="AnalizerBigram.java" tooltip="Analysis/src/jmusicpackage/AnalizerBigram.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Analysis/src/jmusicpackage/AnalizerBigram.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="4407"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="218"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BatchTester.java" partName="BatchTester.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Analysis/src/jmusicpackage/BatchTester.java" title="BatchTester.java" tooltip="Analysis/src/jmusicpackage/BatchTester.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Analysis/src/jmusicpackage/BatchTester.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1095"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="2074"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeneralReaderTrigram.java" partName="GeneralReaderTrigram.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Analysis/src/jmusicpackage/GeneralReaderTrigram.java" title="GeneralReaderTrigram.java" tooltip="Analysis/src/jmusicpackage/GeneralReaderTrigram.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Analysis/src/jmusicpackage/GeneralReaderTrigram.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="9993"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnalizerTrigram.java" partName="AnalizerTrigram.java" path="C:/Users/Tyler/Desktop/SeniorMusicProject/Senior Research/jMusicProject/Analysis/src/jmusicpackage/AnalizerTrigram.java" title="AnalizerTrigram.java" tooltip="Analysis/src/jmusicpackage/AnalizerTrigram.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Analysis/src/jmusicpackage/AnalizerTrigram.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="9028"/>
 </editor>
 </editors>
 <views>
@@ -465,160 +475,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analysis/src/jmusicpackage/UI.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analysis/src/jmusicpackage/AnalizerBigram.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analysis/src/jmusicpackage/WholeSongAnalysisBigram.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analysis/src/jmusicpackage/UI.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analysis/src/jmusicpackage/BatchTester.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analysis/src/jmusicpackage/GeneralReaderTrigram.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Analysis/src/jmusicpackage/AnalizerTrigram.java"/>
 </editors>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="47" y="0"/>
-</item>
-<item historyLabel="WholeSongAnalysisBigram.java" index="2">
-<position info="not_deleted" x="1105" y="0"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="368" y="0"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2222" y="59"/>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="2971" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="1529" y="0"/>
+<position info="not_deleted" x="659" y="0"/>
 </item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2222" y="59"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2535" y="37"/>
+<item historyLabel="WholeSongAnalysisBigram.java" index="1">
+<position info="not_deleted" x="1920" y="13"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="273" y="71"/>
+<position info="not_deleted" x="659" y="0"/>
 </item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="1969" y="48"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="1752" y="0"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="1969" y="48"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2535" y="37"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="1969" y="0"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="214" y="0"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2535" y="37"/>
+<item historyLabel="WholeSongAnalysisBigram.java" index="1">
+<position info="not_deleted" x="1920" y="13"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="667" y="0"/>
+<position info="not_deleted" x="743" y="0"/>
 </item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="214" y="0"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2535" y="37"/>
-</item>
-<item historyLabel="WholeSongAnalysisBigram.java" index="2">
-<position info="not_deleted" x="1105" y="0"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="5549" y="0"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2580" y="0"/>
+<item historyLabel="GeneralReaderTrigram.java" index="4">
+<position info="not_deleted" x="9993" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="903" y="4"/>
+<position info="not_deleted" x="743" y="0"/>
 </item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="5549" y="0"/>
-</item>
-<item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="903" y="4"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2570" y="0"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="5549" y="0"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2570" y="0"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="5549" y="0"/>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="2434" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="872" y="52"/>
+<position info="not_deleted" x="743" y="0"/>
 </item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2306" y="8"/>
+<item historyLabel="GeneralReaderTrigram.java" index="4">
+<position info="not_deleted" x="9993" y="0"/>
 </item>
-<item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="881" y="0"/>
+<item historyLabel="AnalizerBigram.java" index="0">
+<position info="not_deleted" x="218" y="0"/>
 </item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2306" y="8"/>
+<item historyLabel="GeneralReaderTrigram.java" index="4">
+<position info="not_deleted" x="9993" y="0"/>
 </item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="2019" y="0"/>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="220" y="1"/>
 </item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="4407" y="0"/>
-</item>
-<item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="807" y="0"/>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="1007" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="872" y="0"/>
+<position info="not_deleted" x="743" y="0"/>
+</item>
+<item historyLabel="AnalizerBigram.java" index="0">
+<position info="not_deleted" x="218" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="926" y="0"/>
+<position info="not_deleted" x="743" y="0"/>
+</item>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="2306" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="909" y="0"/>
+<position info="not_deleted" x="743" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="220" y="1"/>
+</item>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="2306" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="6325" y="0"/>
+</item>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="2306" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="6325" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="6355" y="0"/>
+</item>
+<item historyLabel="GeneralReaderTrigram.java" index="4">
+<position info="not_deleted" x="9993" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="5825" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="807" y="0"/>
+<position info="not_deleted" x="743" y="0"/>
+</item>
+<item historyLabel="GeneralReaderTrigram.java" index="4">
+<position info="not_deleted" x="9993" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="232" y="0"/>
+</item>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="2135" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="477" y="0"/>
+</item>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="2135" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="8482" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="8545" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="8627" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="8701" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="8775" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="8849" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="8923" y="0"/>
+</item>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="9028" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="872" y="0"/>
+<position info="not_deleted" x="1287" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="926" y="0"/>
+<position info="not_deleted" x="1352" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="1609" y="0"/>
+<position info="not_deleted" x="1411" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="1700" y="0"/>
+<position info="not_deleted" x="2074" y="0"/>
+</item>
+<item historyLabel="UI.java" index="2">
+<position info="not_deleted" x="2220" y="0"/>
 </item>
 <item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="231" y="0"/>
+<position info="not_deleted" x="2074" y="0"/>
 </item>
-<item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="273" y="0"/>
-</item>
-<item historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="206" y="0"/>
-</item>
-<item historyLabel="UI.java" index="0">
-<position info="not_deleted" x="2609" y="0"/>
-</item>
-<item historyLabel="WholeSongAnalysisBigram.java" index="2">
-<position info="not_deleted" x="1105" y="0"/>
-</item>
-<item historyLabel="AnalizerBigram.java" index="1">
-<position info="not_deleted" x="4407" y="0"/>
+<item historyLabel="AnalizerTrigram.java" index="5">
+<position info="not_deleted" x="9028" y="0"/>
 </item>
 <item active="true" historyLabel="BatchTester.java" index="3">
-<position info="not_deleted" x="206" y="0"/>
+<position info="not_deleted" x="2074" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -637,6 +649,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnalizerTrigram.java" tooltip="Analysis/src/jmusicpackage/AnalizerTrigram.java">
+<persistable path="/Analysis/src/jmusicpackage/AnalizerTrigram.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GeneralReaderTrigram.java" tooltip="Analysis/src/jmusicpackage/GeneralReaderTrigram.java">
+<persistable path="/Analysis/src/jmusicpackage/GeneralReaderTrigram.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BatchTester.java" tooltip="Analysis/src/jmusicpackage/BatchTester.java">
 <persistable path="/Analysis/src/jmusicpackage/BatchTester.java"/>
 </file>
@@ -675,9 +693,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MusicGeneration.java" tooltip="Unigram Analysis/src/jmusicpackage/MusicGeneration.java">
 <persistable path="/Unigram Analysis/src/jmusicpackage/MusicGeneration.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="Test/src/Test.java">
-<persistable path="/Test/src/Test.java"/>
 </file>
 </mruList>
 </workbench>
