@@ -75,40 +75,40 @@ public class BatchTester {
 					//by pitch
 					if(artist1p>artist2p && artist1p>artist3p && artist1p>artist4p){
 						if(correctArtist.equals(ARTISTNAME1)) hitCounterP++;
-						writer.write("Pitch only: "+ARTISTNAME1+"\n");
+						writer.write(files[i].getPath()+"\nPitch only: "+ARTISTNAME1+"\n");
 					}
 					else if(artist2p>artist1p && artist2p>artist3p && artist2p>artist4p){
 						if(correctArtist.equals(ARTISTNAME2)) hitCounterP++;
-						writer.write("Pitch only: "+ARTISTNAME2+"\n");
+						writer.write(files[i].getPath()+"\nPitch only: "+ARTISTNAME2+"\n");
 					}
 					else if(artist3p>artist1p && artist3p>artist2p && artist3p>artist4p){
 						if(correctArtist.equals(ARTISTNAME3)) hitCounterP++;
-						writer.write("Pitch only: "+ARTISTNAME3+"\n");
+						writer.write(files[i].getPath()+"\nPitch only: "+ARTISTNAME3+"\n");
 					}
 					else if(artist4p>artist1p && artist4p>artist2p && artist4p>artist3p){
 						if(correctArtist.equals(ARTISTNAME4)) hitCounterP++;
-						writer.write("Pitch only: "+ARTISTNAME4+"\n");
+						writer.write(files[i].getPath()+"\nPitch only: "+ARTISTNAME4+"\n");
 					}
-					else writer.write("Pitch only: Tie Occured\n");
+					else writer.write(files[i].getPath()+"\nPitch only: Tie Occured\n");
 
 					//by rhythm
 					if(artist1r>artist2r && artist1r>artist3r && artist1r>artist4r){
 						if(correctArtist.equals(ARTISTNAME1)) hitCounterR++;
-						writer.write("Rhythm only: "+ARTISTNAME1+"\n");
+						writer.write(files[i].getPath()+"\nRhythm only: "+ARTISTNAME1+"\n");
 					}
 					else if(artist2r>artist1r && artist2r>artist3r && artist2r>artist4r){
 						if(correctArtist.equals(ARTISTNAME2)) hitCounterR++;
-						writer.write("Rhythm only: "+ARTISTNAME2+"\n");
+						writer.write(files[i].getPath()+"\nRhythm only: "+ARTISTNAME2+"\n");
 					}
 					else if(artist3r>artist1r && artist3r>artist2r && artist3r>artist4r){
 						if(correctArtist.equals(ARTISTNAME3)) hitCounterR++;
-						writer.write("Rhythm only: "+ARTISTNAME3+"\n");
+						writer.write(files[i].getPath()+"\nRhythm only: "+ARTISTNAME3+"\n");
 					}
 					else if(artist4r>artist1r && artist4r>artist2r && artist4r>artist3r){
 						if(correctArtist.equals(ARTISTNAME4)) hitCounterR++;
-						writer.write("Rhythm only: "+ARTISTNAME4+"\n");
+						writer.write(files[i].getPath()+"\nRhythm only: "+ARTISTNAME4+"\n");
 					}
-					else writer.write("Rhythm only: Tie Occured\n");
+					else writer.write(files[i].getPath()+"\nRhythm only: Tie Occured\n");
 
 
 					//hit miss sections

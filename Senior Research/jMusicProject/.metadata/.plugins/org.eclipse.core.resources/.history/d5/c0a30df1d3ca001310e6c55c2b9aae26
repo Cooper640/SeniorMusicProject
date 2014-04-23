@@ -184,74 +184,41 @@ public class AnalizerTrigram{
         if(artistcount < 3) artist3RhythmLikelihood = -Double.MAX_VALUE;
         double artist4RhythmLikelihood = Math.log10(1.0/artistcount);
         if(artistcount < 4) artist4RhythmLikelihood = -Double.MAX_VALUE;
-        //smoothing is do-able here since there are only 12 pitch values relative to scale
-        //however, this needs to be done in library construction. So for time being, doing a
-        //temporary solution (which isn't likely to be hit anyways, since i'm fairly sure that
-        //the library actually covers all or nearly all 1728 orderings for everyone just from the number of songs)
         while(songPhrasePitchIterator.hasNext()){
         	String curKey = songPhrasePitchIterator.next();
         	if(a1PercentPitchTree.get(curKey) != null){
         		artist1PitchLikelihood = artist1PitchLikelihood+(Math.log10(a1PercentPitchTree.get(curKey))*songPhrasePitchTree.get(curKey));
         	}
-        	else{
-        		artist1PitchLikelihood = artist1PitchLikelihood+(-10.0*songPhrasePitchTree.get(curKey));
-        	}
         	if(a2PercentPitchTree.get(curKey) != null){
         		artist2PitchLikelihood = artist2PitchLikelihood+(Math.log10(a2PercentPitchTree.get(curKey))*songPhrasePitchTree.get(curKey));
-        	}
-        	else{
-        		artist2PitchLikelihood = artist2PitchLikelihood+(-10.0*songPhrasePitchTree.get(curKey));
         	}
         	if(artistcount >= 3){
 	        	if(a3PercentPitchTree.get(curKey) != null){
 	        		artist3PitchLikelihood = artist3PitchLikelihood+(Math.log10(a3PercentPitchTree.get(curKey))*songPhrasePitchTree.get(curKey));
-	        	}
-	        	else{
-	        		artist3PitchLikelihood = artist3PitchLikelihood+(-10.0*songPhrasePitchTree.get(curKey));
 	        	}
         	}
         	if(artistcount >= 4) {
 	        	if(a4PercentPitchTree.get(curKey) != null){
 	        		artist4PitchLikelihood = artist4PitchLikelihood+(Math.log10(a4PercentPitchTree.get(curKey))*songPhrasePitchTree.get(curKey));
 	        	}
-	        	else{
-	        		artist4PitchLikelihood = artist4PitchLikelihood+(-10.0*songPhrasePitchTree.get(curKey));
-	        	}
         	}
         }
-        //since there are Double.MAX_VALUE^3 possible rhythms, smoothing won't give anything but a 0
-        //so i'm currently using a small probability i'm manually choosing so that it will still be counted
-        //otherwise a song which doesn't match any rhythms will give 1/artistcount as the likelihood
-        //currently using 1.0*10^-10 as there aren't any powers greater than -6 in the library so this is several orders smaller
-        //which log10 of is simply -10.0
         while(songPhraseRhythmIterator.hasNext()){
         	String curKey = songPhraseRhythmIterator.next();
         	if(a1PercentRhythmTree.get(curKey) != null){
         		artist1RhythmLikelihood = artist1RhythmLikelihood+(Math.log10(a1PercentRhythmTree.get(curKey))*songPhraseRhythmTree.get(curKey));
         	}
-        	else{
-        		artist1RhythmLikelihood = artist1RhythmLikelihood+(-10.0*songPhraseRhythmTree.get(curKey));
-        	}
         	if(a2PercentRhythmTree.get(curKey) != null){
         		artist2RhythmLikelihood = artist2RhythmLikelihood+(Math.log10(a2PercentRhythmTree.get(curKey))*songPhraseRhythmTree.get(curKey));
-        	}
-        	else{
-        		artist2RhythmLikelihood = artist2RhythmLikelihood+(-10.0*songPhraseRhythmTree.get(curKey));
         	}
         	if(artistcount >= 3) {
 	        	if(a3PercentRhythmTree.get(curKey) != null){
 	        		artist3RhythmLikelihood = artist3RhythmLikelihood+(Math.log10(a3PercentRhythmTree.get(curKey))*songPhraseRhythmTree.get(curKey));
 	        	}
-	        	else{
-	        		artist3RhythmLikelihood = artist3RhythmLikelihood+(-10.0*songPhraseRhythmTree.get(curKey));
-	        	}
         	}
         	if(artistcount >= 4) {
 	        	if(a4PercentRhythmTree.get(curKey) != null){
 	        		artist4RhythmLikelihood = artist4RhythmLikelihood+(Math.log10(a4PercentRhythmTree.get(curKey))*songPhraseRhythmTree.get(curKey));
-	        	}
-	        	else{
-	        		artist4RhythmLikelihood = artist4RhythmLikelihood+(-10.0*songPhraseRhythmTree.get(curKey));
 	        	}
         	}
         }

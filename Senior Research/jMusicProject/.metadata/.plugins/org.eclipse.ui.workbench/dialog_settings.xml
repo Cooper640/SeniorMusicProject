@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="ImportExportAction">
-	</section>
 	<section name="org.eclipse.ui.internal.QuickAccess">
 		<item key="dialogWidth" value="1260"/>
 		<item key="dialogHeight" value="737"/>
@@ -13,6 +11,8 @@
 		</list>
 		<list key="orderedElements">
 		</list>
+	</section>
+	<section name="ImportExportAction">
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
 		<item key="DIALOG_X_ORIGIN" value="8"/>

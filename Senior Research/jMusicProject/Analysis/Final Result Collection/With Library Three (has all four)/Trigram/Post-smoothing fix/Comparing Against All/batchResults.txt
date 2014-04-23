@@ -1,0 +1,183 @@
+Testing Byrd
+
+Songs\Byrd Test Songs\byrd03.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Songs\Byrd Test Songs\byrd16.mid
+Overall: Byrd
+Pitch only: Bach
+Rhythm only: Byrd
+Songs\Byrd Test Songs\byrd31.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Songs\Byrd Test Songs\byrd38.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Songs\Byrd Test Songs\byrd45.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Songs\Byrd Test Songs\byrd56.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Songs\Byrd Test Songs\byrd62.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Songs\Byrd Test Songs\byrd78.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Songs\Byrd Test Songs\byrd87.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Songs\Byrd Test Songs\Mass for four voices 3 Credo.mid
+Overall: Byrd
+Pitch only: Byrd
+Rhythm only: Byrd
+Overall Hit/Miss rate: 10/10
+Pitch Hit/Miss rate: 9/10
+Rhythm Hit/Miss rate: 10/10
+
+Testing Mozart
+
+Songs\Mozart Test Songs\gp_k136a.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Mozart Test Songs\mozbasn1_k191.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Mozart Test Songs\mozk299b.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Mozart Test Songs\mozk313c.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Mozart Test Songs\mozk466b.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Mozart Test Songs\mozk503b.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Mozart Test Songs\mozk525c.mid
+Overall: Mozart
+Pitch only: Bach
+Rhythm only: Mozart
+Songs\Mozart Test Songs\mozk622c.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Mozart Test Songs\moz_k191.mid
+Overall: Bach
+Pitch only: Mozart
+Rhythm only: Bach
+Songs\Mozart Test Songs\mz477.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Overall Hit/Miss rate: 9/10
+Pitch Hit/Miss rate: 9/10
+Rhythm Hit/Miss rate: 9/10
+
+Testing Bach
+
+Songs\Bach Test Songs\988-v05.mid
+Overall: Bach
+Pitch only: Byrd
+Rhythm only: Bach
+Songs\Bach Test Songs\bwv1062.mid
+Overall: Bach
+Pitch only: Bach
+Rhythm only: Bach
+Songs\Bach Test Songs\bwv1069BOURREE.mid
+Overall: Bach
+Pitch only: Bach
+Rhythm only: Bach
+Songs\Bach Test Songs\bwv529-3.mid
+Overall: Bach
+Pitch only: Bach
+Rhythm only: Bach
+Songs\Bach Test Songs\bwv806g.mid
+Overall: Bach
+Pitch only: Bach
+Rhythm only: Bach
+Songs\Bach Test Songs\bwv809e.mid
+Overall: Bach
+Pitch only: Byrd
+Rhythm only: Bach
+Songs\Bach Test Songs\cs4-1pre.mid
+Overall: Bach
+Pitch only: Chopin
+Rhythm only: Bach
+Songs\Bach Test Songs\fp-4bou.mid
+Overall: Bach
+Pitch only: Bach
+Rhythm only: Bach
+Songs\Bach Test Songs\sonat_5d.mid
+Overall: Bach
+Pitch only: Bach
+Rhythm only: Bach
+Songs\Bach Test Songs\vs2-2fug.mid
+Overall: Bach
+Pitch only: Bach
+Rhythm only: Bach
+Overall Hit/Miss rate: 10/10
+Pitch Hit/Miss rate: 7/10
+Rhythm Hit/Miss rate: 10/10
+
+Testing Chopin
+
+Songs\Chopin Test Songs\ch-ps3-3.mid
+Overall: Chopin
+Pitch only: Chopin
+Rhythm only: Bach
+Songs\Chopin Test Songs\chmz0603.mid
+Overall: Bach
+Pitch only: Chopin
+Rhythm only: Bach
+Songs\Chopin Test Songs\Chopin_Etude_Op10-4.mid
+Overall: Bach
+Pitch only: Bach
+Rhythm only: Bach
+Songs\Chopin Test Songs\chopso2c.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Chopin Test Songs\chpn-p11.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Bach
+Songs\Chopin Test Songs\chpn-p4.mid
+Overall: Mozart
+Pitch only: Mozart
+Rhythm only: Mozart
+Songs\Chopin Test Songs\chpn_op25_e3.mid
+Overall: Bach
+Pitch only: Chopin
+Rhythm only: Bach
+Songs\Chopin Test Songs\fant-imp.mid
+Overall: Chopin
+Pitch only: Chopin
+Rhythm only: Chopin
+Songs\Chopin Test Songs\op40no01.mid
+Overall: Chopin
+Pitch only: Chopin
+Rhythm only: Bach
+Songs\Chopin Test Songs\prelud20.mid
+Overall: Mozart
+Pitch only: Chopin
+Rhythm only: Mozart
+Overall Hit/Miss rate: 3/10
+Pitch Hit/Miss rate: 6/10
+Rhythm Hit/Miss rate: 1/10
