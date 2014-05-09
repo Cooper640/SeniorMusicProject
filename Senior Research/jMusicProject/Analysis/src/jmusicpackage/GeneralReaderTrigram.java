@@ -10,9 +10,6 @@ import jm.util.*;
 
 public class GeneralReaderTrigram implements JMC {
 
-	//static int pitchTotal = 0;
-	//static int rhythmTotal = 0;
-
 	public static void read(String songPath, String name){
 
 		int pitchTotal = 0;

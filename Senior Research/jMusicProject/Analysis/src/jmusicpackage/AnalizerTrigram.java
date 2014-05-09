@@ -5,16 +5,18 @@ import java.io.*;
 import java.util.*;
 
 public class AnalizerTrigram{
-
+	//IMPORTANT:
+	//point this at your library data file
 	static File libraryPercentStorage = new File("Songs/_Current Library Analysis/Trigram/All.txt");
-	//was only used in testing, now being set by calls to analyze method
-	static File songPhraseTreeStorage = new File("Test 3 Results/100 length left hand/Random Song Trees.txt");
+	//hard coded path was only used for testing, now being set by calls to analyze method
+	static File songPhraseTreeStorage; //= new File("Test 3 Results/100 length left hand/Random Song Trees.txt");
 	static String ARTIST1 = "Bach";
 	static String ARTIST2 = "Chopin";
 	static String ARTIST3 = "Mozart";
 	static String ARTIST4 = "Byrd";
 
 	public static void main(String[] args) {
+		//used to work out how many composers are in the library data file (min of 2, max of 4)
 		double artistcount = 0;
 
 		TreeMap<String, Integer> songPhrasePitchTree = new TreeMap<String, Integer>();
@@ -33,6 +35,7 @@ public class AnalizerTrigram{
 	    TreeMap<String, Double> a4PercentRhythmTree = new TreeMap<String, Double>();
 
 		try{
+			//read in from the percents
 			if(libraryPercentStorage.exists()){
 				Scanner fileScanner = new Scanner(libraryPercentStorage);
 				boolean artist1 = false;
@@ -126,6 +129,7 @@ public class AnalizerTrigram{
     	catch(FileNotFoundException e){}
 
     	try{
+    		//read in from the individual song
 			if(songPhraseTreeStorage.exists()){
 				Scanner fileScanner = new Scanner(songPhraseTreeStorage);
 				int totalsPointer = 0;
@@ -169,6 +173,7 @@ public class AnalizerTrigram{
 			}
     	}
     	//attempting to use log space to help prevent overflow/underflow
+    	//do probability calculations
     	catch(FileNotFoundException e){}
 		Iterator<String> songPhrasePitchIterator = songPhrasePitchTree.keySet().iterator();
         Iterator<String> songPhraseRhythmIterator = songPhraseRhythmTree.keySet().iterator();
@@ -219,7 +224,7 @@ public class AnalizerTrigram{
 	        	}
         	}
         }
-        //since there are Double.MAX_VALUE^3 possible rhythms, smoothing won't give anything but a 0
+        //since there are a massive amount of possible rhythms, smoothing probably won't give anything but a 0
         //so i'm currently using a small probability i'm manually choosing so that it will still be counted
         //otherwise a song which doesn't match any rhythms will give 1/artistcount as the likelihood
         //currently using 1.0*10^-10 as there aren't any powers greater than -6 in the library so this is several orders smaller
@@ -256,6 +261,7 @@ public class AnalizerTrigram{
         	}
         }
 
+        //write results
         File results = new File("results.txt");
         try{
     		BufferedWriter writer = new BufferedWriter(new FileWriter(results,false));
@@ -277,6 +283,7 @@ public class AnalizerTrigram{
         catch(IOException e){}
 	}
 
+	//point at indicated song's tree and analyze
 	static void analyze(String treeFile){
 		songPhraseTreeStorage = new File(treeFile);
 		String[] a = new String[0];

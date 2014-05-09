@@ -17,7 +17,8 @@ public class WholeSongAnalysisBigram implements JMC{
 		// TODO Auto-generated method stub
 
 	}
-
+	//old chunking method
+	/*
 	public static void analyze(String songName, int CHUNKSIZE){
 		Score song = new Score();
 		Read.midi(song, songName);
@@ -39,7 +40,9 @@ public class WholeSongAnalysisBigram implements JMC{
 			i++;
 		}
 	}
+	*/
 
+	//bigram method
 	public static void analisisMethod2(String songpath){
 		try{
     		File file1 = new File("Random Song Pitch By Key Tree.txt");
@@ -63,6 +66,7 @@ public class WholeSongAnalysisBigram implements JMC{
 		AnalizerBigram.analyze("Random Song Trees.txt");
 	}
 
+	//used for Trigrams
 	public static void analisisTrigramMethod (String songpath) {
 		try{
     		File file1 = new File("Random Song Pitch By Key Tree.txt");
@@ -86,6 +90,7 @@ public class WholeSongAnalysisBigram implements JMC{
 		AnalizerTrigram.analyze("Random Song Trees.txt");
 	}
 
+	//used to create a single file which AnalizerTrigram can read
 	public static void treeStitch(String pitchTreePath, String rhythmTreePath){
 		String trees[] = new String[2];
 		trees[0] = pitchTreePath;

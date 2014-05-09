@@ -10,9 +10,6 @@ import jm.util.*;
 
 public class GeneralReader implements JMC {
 
-	//static int pitchTotal = 0;
-	//static int rhythmTotal = 0;
-
 	public static void read(String songPath, String name){
 
 		int pitchTotal = 0;
@@ -158,8 +155,6 @@ public class GeneralReader implements JMC {
         		//build on pitch by key tree from song phrase
         		int[] pitches = songPhrases[i][j].getPitchArray();
         		if(pitches.length>1){
-        			//this is too much for bigram analysis, incrementing on addition to tree instead
-        			//pitchTotal+=pitches.length;
         			for(int n=0; n<pitches.length-1; n++){
         				//if not a rest
         				if(pitches[n]<=Note.MAX_PITCH && pitches[n]>=Note.MIN_PITCH){
@@ -232,8 +227,6 @@ public class GeneralReader implements JMC {
         		double[] rhythmArray = songPhrases[i][j].getRhythmArray();
         		Note[] notes = songPhrases[i][j].getNoteArray();
         		if(rhythmArray.length>1){
-        			//same issue as with pitch total, same fix
-        			//rhythmTotal+=rhythmArray.length;
         			for(int n=0; n<rhythmArray.length-1; n++){
         				//not a rest
         				if(notes[n].getPitch()>=Note.MIN_PITCH){
@@ -321,7 +314,8 @@ public class GeneralReader implements JMC {
         catch(IOException e){}
 	}
 
-
+	//no longer used since switch to pitch by key
+	/*
 	public static TreeMap<Integer,Integer> pitchRangeTrunkate(TreeMap<Integer,Integer> pitchTreeIn){
     	TreeMap<Integer,Integer> pitchTreeOut = new TreeMap<Integer,Integer>();
     	Iterator<Integer> pitchIterator = pitchTreeIn.keySet().iterator();
@@ -336,7 +330,9 @@ public class GeneralReader implements JMC {
     	}
     	return pitchTreeOut;
     }
+    */
 
+	//no longer used to preserve as many variations of rhythm as possible
 	/*
     public static TreeMap<Double,Integer> rhythmRound(TreeMap<Double,Integer> rhythmTreeIn){
     	TreeMap<Double,Integer> rhythmTreeOut = new TreeMap<Double,Integer>();
